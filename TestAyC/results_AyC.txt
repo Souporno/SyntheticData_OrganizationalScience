@@ -1,0 +1,2420 @@
+[1] "GENDER Proportions:"
+
+  Female     Male 
+0.547486 0.452514 
+[1] "AREA Proportions:"
+
+                 Accounting  Administrative Directorate 
+                0.030726257                 0.001396648 
+  Administrative Management      Administrative Tenders 
+                0.005586592                 0.012569832 
+                After-sales                         BIM 
+                0.013966480                 0.026536313 
+                    Budgets                  Commercial 
+                0.019553073                 0.064245810 
+   Comprehensive Management        Construction Tenders 
+                0.087988827                 0.008379888 
+                      Costs                         CRM 
+                0.008379888                 0.006983240 
+Design and Finishing Center         Digital Engineering 
+                0.013966480                 0.001396648 
+        Document Management          Dominican Republic 
+                0.002793296                 0.001396648 
+               Electricians        Financial Management 
+                0.012569832                 0.004189944 
+                  Formaleta                 Foundations 
+                0.004189944                 0.015363128 
+   Human Talent and Culture                       Legal 
+                0.023743017                 0.008379888 
+       Logistics and Supply                   Machinery 
+                0.012569832                 0.013966480 
+                  Marketing                         PCH 
+                0.023743017                 0.002793296 
+                 Presidency    Procedures and Portfolio 
+                0.001396648                 0.030726257 
+                Programming          Project Management 
+                0.015363128                 0.040502793 
+                        RCI         Regional Management 
+                0.004189944                 0.001396648 
+                    Systems                       Taxes 
+                0.012569832                 0.004189944 
+       Technical Management                Tower Cranes 
+                0.039106145                 0.001396648 
+                   Treasury                       Works 
+                0.022346369                 0.353351955 
+           Works Department 
+                0.046089385 
+[1] "Overlap Ratio: 0"
+                                                                 Variable
+1                                               Years of Service_original
+2                                              Years of Service_synthetic
+3   CulturaAyC - We add value to clients (internal and external)_original
+4  CulturaAyC - We add value to clients (internal and external)_synthetic
+5                      CulturaAyC - We genuinely care for people_original
+6                     CulturaAyC - We genuinely care for people_synthetic
+7                        CulturaAyC - We execute with discipline_original
+8                       CulturaAyC - We execute with discipline_synthetic
+9                  CulturaAyC - We promote high-performing teams_original
+10                CulturaAyC - We promote high-performing teams_synthetic
+11               CulturaAyC - We innovate, we learn and we adapt_original
+12              CulturaAyC - We innovate, we learn and we adapt_synthetic
+13                                                   PERFORMANCE_original
+14                                                  PERFORMANCE_synthetic
+15                                                           AGE_original
+16                                                          AGE_synthetic
+17                                                   NPS company_original
+18                                                  NPS company_synthetic
+        Min Max   Median      Mean         SD   Cohens_d
+1   0.00000  27  3.00000  4.858939  4.8237108         NA
+2   0.00000  27  2.00000  3.914804  4.2422786  0.2078534
+3   1.00000   4  4.00000  3.453988  0.6411631         NA
+4   1.00000   4  3.00000  3.234219  0.7782132  0.3094199
+5   1.00000   4  3.00000  3.420245  0.6661128         NA
+6   1.00000   4  3.00000  3.304493  0.8075455  0.1569872
+7   1.00000   4  4.00000  3.457055  0.6461484         NA
+8   1.00000   4  3.00000  3.331115  0.8257402  0.1707066
+9   1.00000   4  3.00000  3.312883  0.6835479         NA
+10  1.00000   4  3.00000  3.127695  0.8324478  0.2440731
+11  1.00000   4  4.00000  3.526074  0.6398886         NA
+12  1.00000   4  4.00000  3.385382  0.8020267  0.1947890
+13  4.24000 100 84.16667 83.783819 11.3497038         NA
+14 15.41265 100 87.23503 86.289869  9.5540249 -0.2388908
+15 21.00000  69 37.00000 39.043296  9.9774331         NA
+16 21.00000  69 40.00000 41.006983  9.2940288 -0.2036642
+17  1.00000  10 10.00000  9.117562  1.4067309         NA
+18  1.00000  10 10.00000  8.782414  1.6617885  0.2179303
+[1] 0.09541953
+[1] "Standard Deviation: 0.0744894357907703"
+[1] "Minimum Difference: 0"
+[1] "Maximum Difference: 0.423621096278673"
+                                                       Variable   Dataset
+1                                                           AGE  Original
+2                                                           AGE Synthetic
+3  CulturaAyC - We add value to clients (internal and external)  Original
+4  CulturaAyC - We add value to clients (internal and external) Synthetic
+5                       CulturaAyC - We execute with discipline  Original
+6                       CulturaAyC - We execute with discipline Synthetic
+7                     CulturaAyC - We genuinely care for people  Original
+8                     CulturaAyC - We genuinely care for people Synthetic
+9               CulturaAyC - We innovate, we learn and we adapt  Original
+10              CulturaAyC - We innovate, we learn and we adapt Synthetic
+11                CulturaAyC - We promote high-performing teams  Original
+12                CulturaAyC - We promote high-performing teams Synthetic
+13                                                  NPS company  Original
+14                                                  NPS company Synthetic
+15                                             Years of Service  Original
+16                                             Years of Service Synthetic
+          Beta P_Value    R_Squared  Delta_Beta Delta_R_Squared
+1   0.15024458  < .001 1.744481e-02 -0.02324801    -0.002182535
+2   0.12699656  < .001 1.526227e-02 -0.02324801    -0.002182535
+3   1.06787474  >= .05 3.552101e-03  0.15765095     0.006747413
+4   1.22552569   < .05 1.029951e-02  0.15765095     0.006747413
+5  -0.24077101  >= .05 1.833921e-04  0.90769596     0.003238407
+6   0.66692495  >= .05 3.421799e-03  0.90769596     0.003238407
+7   0.61549900  >= .05 1.273673e-03  0.71473797     0.011794774
+8   1.33023697   < .01 1.306845e-02  0.71473797     0.011794774
+9  -0.07138166  >= .05 1.580846e-05  1.35325138     0.011952703
+10  1.28186973   < .01 1.196851e-02  1.35325138     0.011952703
+11  0.07233394  >= .05 1.852379e-05  1.22325806     0.013072465
+12  1.29559199   < .01 1.309099e-02  1.22325806     0.013072465
+13  0.41902761  >= .05 2.708340e-03  0.65648989     0.032349693
+14  1.07551750  < .001 3.505803e-02  0.65648989     0.032349693
+15  0.26968797   < .01 1.313762e-02 -0.09725331    -0.007275227
+16  0.17243466   < .05 5.862391e-03 -0.09725331    -0.007275227
+                                                                 Variable
+1                                               Years of Service_original
+2                                              Years of Service_synthetic
+3   CulturaAyC - We add value to clients (internal and external)_original
+4  CulturaAyC - We add value to clients (internal and external)_synthetic
+5                      CulturaAyC - We genuinely care for people_original
+6                     CulturaAyC - We genuinely care for people_synthetic
+7                        CulturaAyC - We execute with discipline_original
+8                       CulturaAyC - We execute with discipline_synthetic
+9                  CulturaAyC - We promote high-performing teams_original
+10                CulturaAyC - We promote high-performing teams_synthetic
+11               CulturaAyC - We innovate, we learn and we adapt_original
+12              CulturaAyC - We innovate, we learn and we adapt_synthetic
+13                                                           AGE_original
+14                                                          AGE_synthetic
+15                                                   NPS company_original
+16                                                  NPS company_synthetic
+    Kurtosis   Skewness
+1   6.500270  1.7836491
+2  10.615735  2.5237138
+3   5.036664 -1.1751989
+4   4.655506 -1.1959973
+5   5.015157 -1.1887868
+6   4.675261 -1.3283971
+7   4.985282 -1.1905823
+8   4.453581 -1.3367558
+9   4.247520 -0.9216643
+10  3.417676 -0.8820801
+11  5.626677 -1.4352144
+12  4.935023 -1.4635704
+13  2.538107  0.5482738
+14  2.628062  0.5230916
+15  6.797255 -1.9741923
+16  4.070887 -1.4097550
+
+Female   Male 
+   392    324 
+    DataType  Group
+1   Original   Male
+2   Original   Male
+3   Original   Male
+4   Original   Male
+5   Original   Male
+6   Original   Male
+7   Original   Male
+8   Original   Male
+9   Original   Male
+10  Original Female
+11  Original Female
+12  Original Female
+13  Original Female
+14  Original Female
+15  Original Female
+16  Original Female
+17  Original Female
+18  Original Female
+19 Synthetic   Male
+20 Synthetic   Male
+21 Synthetic   Male
+22 Synthetic   Male
+23 Synthetic   Male
+24 Synthetic   Male
+25 Synthetic   Male
+26 Synthetic   Male
+27 Synthetic   Male
+28 Synthetic Female
+29 Synthetic Female
+30 Synthetic Female
+31 Synthetic Female
+32 Synthetic Female
+33 Synthetic Female
+34 Synthetic Female
+35 Synthetic Female
+36 Synthetic Female
+                                                       Variable       Min
+1                                              Years of Service  0.000000
+2  CulturaAyC - We add value to clients (internal and external)  1.000000
+3                     CulturaAyC - We genuinely care for people  1.000000
+4                       CulturaAyC - We execute with discipline  1.000000
+5                 CulturaAyC - We promote high-performing teams  1.000000
+6               CulturaAyC - We innovate, we learn and we adapt  1.000000
+7                                                   PERFORMANCE  4.240000
+8                                                           AGE 21.000000
+9                                                   NPS company  5.000000
+10                                             Years of Service  0.000000
+11 CulturaAyC - We add value to clients (internal and external)  1.000000
+12                    CulturaAyC - We genuinely care for people  1.000000
+13                      CulturaAyC - We execute with discipline  1.000000
+14                CulturaAyC - We promote high-performing teams  1.000000
+15              CulturaAyC - We innovate, we learn and we adapt  1.000000
+16                                                  PERFORMANCE  4.555556
+17                                                          AGE 21.000000
+18                                                  NPS company  1.000000
+19                                             Years of Service  1.000000
+20 CulturaAyC - We add value to clients (internal and external)  3.000000
+21                    CulturaAyC - We genuinely care for people  3.000000
+22                      CulturaAyC - We execute with discipline  3.000000
+23                CulturaAyC - We promote high-performing teams  3.000000
+24              CulturaAyC - We innovate, we learn and we adapt  3.000000
+25                                                  PERFORMANCE 72.126805
+26                                                          AGE 23.000000
+27                                                  NPS company  5.000000
+28                                             Years of Service  1.000000
+29 CulturaAyC - We add value to clients (internal and external)  2.000000
+30                    CulturaAyC - We genuinely care for people  3.000000
+31                      CulturaAyC - We execute with discipline  2.000000
+32                CulturaAyC - We promote high-performing teams  2.000000
+33              CulturaAyC - We innovate, we learn and we adapt  2.000000
+34                                                  PERFORMANCE 61.110894
+35                                                          AGE 27.000000
+36                                                  NPS company  7.000000
+         Max   Median      Mean         SD
+1   25.00000  3.00000  4.459877  4.5830751
+2    4.00000  4.00000  3.562724  0.6017132
+3    4.00000  4.00000  3.526882  0.6390989
+4    4.00000  4.00000  3.541219  0.6383319
+5    4.00000  3.00000  3.390681  0.6635846
+6    4.00000  4.00000  3.569892  0.6244050
+7  100.00000 84.54545 84.626068 11.0754388
+8   67.00000 39.00000 40.348765 10.4694143
+9   10.00000 10.00000  8.977199  1.5747605
+10  27.00000  3.50000  5.188776  4.9956581
+11   4.00000  3.00000  3.372654  0.6582828
+12   4.00000  3.00000  3.340483  0.6755299
+13   4.00000  3.00000  3.394102  0.6456368
+14   4.00000  3.00000  3.254692  0.6932941
+15   4.00000  4.00000  3.493298  0.6501308
+16 100.00000 83.33333 83.087674 11.5391654
+17  69.00000 36.00000 37.964286  9.4294391
+18  10.00000 10.00000  9.230366  1.2462308
+19   7.00000  2.50000  3.333333  2.1033883
+20   4.00000  3.00000  3.166667  0.4082483
+21   4.00000  4.00000  3.666667  0.5163978
+22   4.00000  3.00000  3.166667  0.4082483
+23   4.00000  3.00000  3.166667  0.4082483
+24   4.00000  4.00000  3.666667  0.5163978
+25  90.52707 80.84625 81.486580  6.5261066
+26  58.00000 40.00000 41.000000 11.3297677
+27  10.00000  9.00000  7.888889  2.3687784
+28  11.00000  2.00000  3.933333  3.3051187
+29   4.00000  3.00000  3.333333  0.6172134
+30   4.00000  3.00000  3.333333  0.4879500
+31   4.00000  4.00000  3.466667  0.7432234
+32   4.00000  3.00000  3.066667  0.7988086
+33   4.00000  3.00000  3.200000  0.5606119
+34 100.00000 77.99568 81.637272 12.3070956
+35  59.00000 40.00000 40.400000  9.4928545
+36  10.00000  9.00000  8.933333  1.2227993
+    DataType                                                     Variable
+1   Original                                             Years of Service
+2   Original CulturaAyC - We add value to clients (internal and external)
+3   Original                    CulturaAyC - We genuinely care for people
+4   Original                      CulturaAyC - We execute with discipline
+5   Original                CulturaAyC - We promote high-performing teams
+6   Original              CulturaAyC - We innovate, we learn and we adapt
+7   Original                                                  PERFORMANCE
+8   Original                                                          AGE
+9   Original                                                  NPS company
+10 Synthetic                                             Years of Service
+11 Synthetic CulturaAyC - We add value to clients (internal and external)
+12 Synthetic                    CulturaAyC - We genuinely care for people
+13 Synthetic                      CulturaAyC - We execute with discipline
+14 Synthetic                CulturaAyC - We promote high-performing teams
+15 Synthetic              CulturaAyC - We innovate, we learn and we adapt
+16 Synthetic                                                  PERFORMANCE
+17 Synthetic                                                          AGE
+18 Synthetic                                                  NPS company
+      Cohens_d
+1  -0.15205012
+2   0.30139555
+3   0.28346802
+4   0.22915572
+5   0.20039629
+6   0.12016812
+7   0.13602452
+8   0.23933337
+9  -0.17828360
+10 -0.21659061
+11 -0.31851103
+12  0.66351456
+13 -0.50033102
+14  0.15764540
+15  0.86586764
+16 -0.01529825
+17  0.05740669
+18 -0.55408586
+     DataType                       Group
+1    Original                   Machinery
+2    Original                   Machinery
+3    Original                   Machinery
+4    Original                   Machinery
+5    Original                   Machinery
+6    Original                   Machinery
+7    Original                   Machinery
+8    Original                   Machinery
+9    Original                   Machinery
+10   Original   Administrative Management
+11   Original   Administrative Management
+12   Original   Administrative Management
+13   Original   Administrative Management
+14   Original   Administrative Management
+15   Original   Administrative Management
+16   Original   Administrative Management
+17   Original   Administrative Management
+18   Original   Administrative Management
+19   Original        Financial Management
+20   Original        Financial Management
+21   Original        Financial Management
+22   Original        Financial Management
+23   Original        Financial Management
+24   Original        Financial Management
+25   Original        Financial Management
+26   Original        Financial Management
+27   Original        Financial Management
+28   Original        Technical Management
+29   Original        Technical Management
+30   Original        Technical Management
+31   Original        Technical Management
+32   Original        Technical Management
+33   Original        Technical Management
+34   Original        Technical Management
+35   Original        Technical Management
+36   Original        Technical Management
+37   Original      Administrative Tenders
+38   Original      Administrative Tenders
+39   Original      Administrative Tenders
+40   Original      Administrative Tenders
+41   Original      Administrative Tenders
+42   Original      Administrative Tenders
+43   Original      Administrative Tenders
+44   Original      Administrative Tenders
+45   Original      Administrative Tenders
+46   Original    Comprehensive Management
+47   Original    Comprehensive Management
+48   Original    Comprehensive Management
+49   Original    Comprehensive Management
+50   Original    Comprehensive Management
+51   Original    Comprehensive Management
+52   Original    Comprehensive Management
+53   Original    Comprehensive Management
+54   Original    Comprehensive Management
+55   Original          Project Management
+56   Original          Project Management
+57   Original          Project Management
+58   Original          Project Management
+59   Original          Project Management
+60   Original          Project Management
+61   Original          Project Management
+62   Original          Project Management
+63   Original          Project Management
+64   Original                  Presidency
+65   Original                  Presidency
+66   Original                  Presidency
+67   Original                  Presidency
+68   Original                  Presidency
+69   Original                  Presidency
+70   Original                  Presidency
+71   Original                  Presidency
+72   Original                  Presidency
+73   Original                  Commercial
+74   Original                  Commercial
+75   Original                  Commercial
+76   Original                  Commercial
+77   Original                  Commercial
+78   Original                  Commercial
+79   Original                  Commercial
+80   Original                  Commercial
+81   Original                  Commercial
+82   Original          Dominican Republic
+83   Original          Dominican Republic
+84   Original          Dominican Republic
+85   Original          Dominican Republic
+86   Original          Dominican Republic
+87   Original          Dominican Republic
+88   Original          Dominican Republic
+89   Original          Dominican Republic
+90   Original          Dominican Republic
+91   Original                       Costs
+92   Original                       Costs
+93   Original                       Costs
+94   Original                       Costs
+95   Original                       Costs
+96   Original                       Costs
+97   Original                       Costs
+98   Original                       Costs
+99   Original                       Costs
+100  Original                 Foundations
+101  Original                 Foundations
+102  Original                 Foundations
+103  Original                 Foundations
+104  Original                 Foundations
+105  Original                 Foundations
+106  Original                 Foundations
+107  Original                 Foundations
+108  Original                 Foundations
+109  Original                 Programming
+110  Original                 Programming
+111  Original                 Programming
+112  Original                 Programming
+113  Original                 Programming
+114  Original                 Programming
+115  Original                 Programming
+116  Original                 Programming
+117  Original                 Programming
+118  Original Design and Finishing Center
+119  Original Design and Finishing Center
+120  Original Design and Finishing Center
+121  Original Design and Finishing Center
+122  Original Design and Finishing Center
+123  Original Design and Finishing Center
+124  Original Design and Finishing Center
+125  Original Design and Finishing Center
+126  Original Design and Finishing Center
+127  Original        Logistics and Supply
+128  Original        Logistics and Supply
+129  Original        Logistics and Supply
+130  Original        Logistics and Supply
+131  Original        Logistics and Supply
+132  Original        Logistics and Supply
+133  Original        Logistics and Supply
+134  Original        Logistics and Supply
+135  Original        Logistics and Supply
+136  Original                  Accounting
+137  Original                  Accounting
+138  Original                  Accounting
+139  Original                  Accounting
+140  Original                  Accounting
+141  Original                  Accounting
+142  Original                  Accounting
+143  Original                  Accounting
+144  Original                  Accounting
+145  Original         Regional Management
+146  Original         Regional Management
+147  Original         Regional Management
+148  Original         Regional Management
+149  Original         Regional Management
+150  Original         Regional Management
+151  Original         Regional Management
+152  Original         Regional Management
+153  Original         Regional Management
+154  Original                     Systems
+155  Original                     Systems
+156  Original                     Systems
+157  Original                     Systems
+158  Original                     Systems
+159  Original                     Systems
+160  Original                     Systems
+161  Original                     Systems
+162  Original                     Systems
+163  Original    Human Talent and Culture
+164  Original    Human Talent and Culture
+165  Original    Human Talent and Culture
+166  Original    Human Talent and Culture
+167  Original    Human Talent and Culture
+168  Original    Human Talent and Culture
+169  Original    Human Talent and Culture
+170  Original    Human Talent and Culture
+171  Original    Human Talent and Culture
+172  Original                    Treasury
+173  Original                    Treasury
+174  Original                    Treasury
+175  Original                    Treasury
+176  Original                    Treasury
+177  Original                    Treasury
+178  Original                    Treasury
+179  Original                    Treasury
+180  Original                    Treasury
+181  Original                         BIM
+182  Original                         BIM
+183  Original                         BIM
+184  Original                         BIM
+185  Original                         BIM
+186  Original                         BIM
+187  Original                         BIM
+188  Original                         BIM
+189  Original                         BIM
+190  Original                       Legal
+191  Original                       Legal
+192  Original                       Legal
+193  Original                       Legal
+194  Original                       Legal
+195  Original                       Legal
+196  Original                       Legal
+197  Original                       Legal
+198  Original                       Legal
+199  Original            Works Department
+200  Original            Works Department
+201  Original            Works Department
+202  Original            Works Department
+203  Original            Works Department
+204  Original            Works Department
+205  Original            Works Department
+206  Original            Works Department
+207  Original            Works Department
+208  Original                       Taxes
+209  Original                       Taxes
+210  Original                       Taxes
+211  Original                       Taxes
+212  Original                       Taxes
+213  Original                       Taxes
+214  Original                       Taxes
+215  Original                       Taxes
+216  Original                       Taxes
+217  Original                   Formaleta
+218  Original                   Formaleta
+219  Original                   Formaleta
+220  Original                   Formaleta
+221  Original                   Formaleta
+222  Original                   Formaleta
+223  Original                   Formaleta
+224  Original                   Formaleta
+225  Original                   Formaleta
+226  Original                         RCI
+227  Original                         RCI
+228  Original                         RCI
+229  Original                         RCI
+230  Original                         RCI
+231  Original                         RCI
+232  Original                         RCI
+233  Original                         RCI
+234  Original                         RCI
+235  Original        Construction Tenders
+236  Original        Construction Tenders
+237  Original        Construction Tenders
+238  Original        Construction Tenders
+239  Original        Construction Tenders
+240  Original        Construction Tenders
+241  Original        Construction Tenders
+242  Original        Construction Tenders
+243  Original        Construction Tenders
+244  Original                       Works
+245  Original                       Works
+246  Original                       Works
+247  Original                       Works
+248  Original                       Works
+249  Original                       Works
+250  Original                       Works
+251  Original                       Works
+252  Original                       Works
+253  Original                         PCH
+254  Original                         PCH
+255  Original                         PCH
+256  Original                         PCH
+257  Original                         PCH
+258  Original                         PCH
+259  Original                         PCH
+260  Original                         PCH
+261  Original                         PCH
+262  Original                Electricians
+263  Original                Electricians
+264  Original                Electricians
+265  Original                Electricians
+266  Original                Electricians
+267  Original                Electricians
+268  Original                Electricians
+269  Original                Electricians
+270  Original                Electricians
+271  Original                Tower Cranes
+272  Original                Tower Cranes
+273  Original                Tower Cranes
+274  Original                Tower Cranes
+275  Original                Tower Cranes
+276  Original                Tower Cranes
+277  Original                Tower Cranes
+278  Original                Tower Cranes
+279  Original                Tower Cranes
+280  Original                   Marketing
+281  Original                   Marketing
+282  Original                   Marketing
+283  Original                   Marketing
+284  Original                   Marketing
+285  Original                   Marketing
+286  Original                   Marketing
+287  Original                   Marketing
+288  Original                   Marketing
+289  Original         Digital Engineering
+290  Original         Digital Engineering
+291  Original         Digital Engineering
+292  Original         Digital Engineering
+293  Original         Digital Engineering
+294  Original         Digital Engineering
+295  Original         Digital Engineering
+296  Original         Digital Engineering
+297  Original         Digital Engineering
+298  Original                 After-sales
+299  Original                 After-sales
+300  Original                 After-sales
+301  Original                 After-sales
+302  Original                 After-sales
+303  Original                 After-sales
+304  Original                 After-sales
+305  Original                 After-sales
+306  Original                 After-sales
+307  Original    Procedures and Portfolio
+308  Original    Procedures and Portfolio
+309  Original    Procedures and Portfolio
+310  Original    Procedures and Portfolio
+311  Original    Procedures and Portfolio
+312  Original    Procedures and Portfolio
+313  Original    Procedures and Portfolio
+314  Original    Procedures and Portfolio
+315  Original    Procedures and Portfolio
+316  Original                     Budgets
+317  Original                     Budgets
+318  Original                     Budgets
+319  Original                     Budgets
+320  Original                     Budgets
+321  Original                     Budgets
+322  Original                     Budgets
+323  Original                     Budgets
+324  Original                     Budgets
+325  Original                         CRM
+326  Original                         CRM
+327  Original                         CRM
+328  Original                         CRM
+329  Original                         CRM
+330  Original                         CRM
+331  Original                         CRM
+332  Original                         CRM
+333  Original                         CRM
+334  Original         Document Management
+335  Original         Document Management
+336  Original         Document Management
+337  Original         Document Management
+338  Original         Document Management
+339  Original         Document Management
+340  Original         Document Management
+341  Original         Document Management
+342  Original         Document Management
+343  Original  Administrative Directorate
+344  Original  Administrative Directorate
+345  Original  Administrative Directorate
+346  Original  Administrative Directorate
+347  Original  Administrative Directorate
+348  Original  Administrative Directorate
+349  Original  Administrative Directorate
+350  Original  Administrative Directorate
+351  Original  Administrative Directorate
+352 Synthetic                   Machinery
+353 Synthetic                   Machinery
+354 Synthetic                   Machinery
+355 Synthetic                   Machinery
+356 Synthetic                   Machinery
+357 Synthetic                   Machinery
+358 Synthetic                   Machinery
+359 Synthetic                   Machinery
+360 Synthetic                   Machinery
+361 Synthetic   Administrative Management
+362 Synthetic   Administrative Management
+363 Synthetic   Administrative Management
+364 Synthetic   Administrative Management
+365 Synthetic   Administrative Management
+366 Synthetic   Administrative Management
+367 Synthetic   Administrative Management
+368 Synthetic   Administrative Management
+369 Synthetic   Administrative Management
+370 Synthetic        Financial Management
+371 Synthetic        Financial Management
+372 Synthetic        Financial Management
+373 Synthetic        Financial Management
+374 Synthetic        Financial Management
+375 Synthetic        Financial Management
+376 Synthetic        Financial Management
+377 Synthetic        Financial Management
+378 Synthetic        Financial Management
+379 Synthetic        Technical Management
+380 Synthetic        Technical Management
+381 Synthetic        Technical Management
+382 Synthetic        Technical Management
+383 Synthetic        Technical Management
+384 Synthetic        Technical Management
+385 Synthetic        Technical Management
+386 Synthetic        Technical Management
+387 Synthetic        Technical Management
+388 Synthetic      Administrative Tenders
+389 Synthetic      Administrative Tenders
+390 Synthetic      Administrative Tenders
+391 Synthetic      Administrative Tenders
+392 Synthetic      Administrative Tenders
+393 Synthetic      Administrative Tenders
+394 Synthetic      Administrative Tenders
+395 Synthetic      Administrative Tenders
+396 Synthetic      Administrative Tenders
+397 Synthetic    Comprehensive Management
+398 Synthetic    Comprehensive Management
+399 Synthetic    Comprehensive Management
+400 Synthetic    Comprehensive Management
+401 Synthetic    Comprehensive Management
+402 Synthetic    Comprehensive Management
+403 Synthetic    Comprehensive Management
+404 Synthetic    Comprehensive Management
+405 Synthetic    Comprehensive Management
+406 Synthetic          Project Management
+407 Synthetic          Project Management
+408 Synthetic          Project Management
+409 Synthetic          Project Management
+410 Synthetic          Project Management
+411 Synthetic          Project Management
+412 Synthetic          Project Management
+413 Synthetic          Project Management
+414 Synthetic          Project Management
+415 Synthetic                  Presidency
+416 Synthetic                  Presidency
+417 Synthetic                  Presidency
+418 Synthetic                  Presidency
+419 Synthetic                  Presidency
+420 Synthetic                  Presidency
+421 Synthetic                  Presidency
+422 Synthetic                  Presidency
+423 Synthetic                  Presidency
+424 Synthetic                  Commercial
+425 Synthetic                  Commercial
+426 Synthetic                  Commercial
+427 Synthetic                  Commercial
+428 Synthetic                  Commercial
+429 Synthetic                  Commercial
+430 Synthetic                  Commercial
+431 Synthetic                  Commercial
+432 Synthetic                  Commercial
+433 Synthetic          Dominican Republic
+434 Synthetic          Dominican Republic
+435 Synthetic          Dominican Republic
+436 Synthetic          Dominican Republic
+437 Synthetic          Dominican Republic
+438 Synthetic          Dominican Republic
+439 Synthetic          Dominican Republic
+440 Synthetic          Dominican Republic
+441 Synthetic          Dominican Republic
+442 Synthetic                       Costs
+443 Synthetic                       Costs
+444 Synthetic                       Costs
+445 Synthetic                       Costs
+446 Synthetic                       Costs
+447 Synthetic                       Costs
+448 Synthetic                       Costs
+449 Synthetic                       Costs
+450 Synthetic                       Costs
+451 Synthetic                 Foundations
+452 Synthetic                 Foundations
+453 Synthetic                 Foundations
+454 Synthetic                 Foundations
+455 Synthetic                 Foundations
+456 Synthetic                 Foundations
+457 Synthetic                 Foundations
+458 Synthetic                 Foundations
+459 Synthetic                 Foundations
+460 Synthetic                 Programming
+461 Synthetic                 Programming
+462 Synthetic                 Programming
+463 Synthetic                 Programming
+464 Synthetic                 Programming
+465 Synthetic                 Programming
+466 Synthetic                 Programming
+467 Synthetic                 Programming
+468 Synthetic                 Programming
+469 Synthetic Design and Finishing Center
+470 Synthetic Design and Finishing Center
+471 Synthetic Design and Finishing Center
+472 Synthetic Design and Finishing Center
+473 Synthetic Design and Finishing Center
+474 Synthetic Design and Finishing Center
+475 Synthetic Design and Finishing Center
+476 Synthetic Design and Finishing Center
+477 Synthetic Design and Finishing Center
+478 Synthetic        Logistics and Supply
+479 Synthetic        Logistics and Supply
+480 Synthetic        Logistics and Supply
+481 Synthetic        Logistics and Supply
+482 Synthetic        Logistics and Supply
+483 Synthetic        Logistics and Supply
+484 Synthetic        Logistics and Supply
+485 Synthetic        Logistics and Supply
+486 Synthetic        Logistics and Supply
+487 Synthetic                  Accounting
+488 Synthetic                  Accounting
+489 Synthetic                  Accounting
+490 Synthetic                  Accounting
+491 Synthetic                  Accounting
+492 Synthetic                  Accounting
+493 Synthetic                  Accounting
+494 Synthetic                  Accounting
+495 Synthetic                  Accounting
+496 Synthetic         Regional Management
+497 Synthetic         Regional Management
+498 Synthetic         Regional Management
+499 Synthetic         Regional Management
+500 Synthetic         Regional Management
+501 Synthetic         Regional Management
+502 Synthetic         Regional Management
+503 Synthetic         Regional Management
+504 Synthetic         Regional Management
+505 Synthetic                     Systems
+506 Synthetic                     Systems
+507 Synthetic                     Systems
+508 Synthetic                     Systems
+509 Synthetic                     Systems
+510 Synthetic                     Systems
+511 Synthetic                     Systems
+512 Synthetic                     Systems
+513 Synthetic                     Systems
+514 Synthetic    Human Talent and Culture
+515 Synthetic    Human Talent and Culture
+516 Synthetic    Human Talent and Culture
+517 Synthetic    Human Talent and Culture
+518 Synthetic    Human Talent and Culture
+519 Synthetic    Human Talent and Culture
+520 Synthetic    Human Talent and Culture
+521 Synthetic    Human Talent and Culture
+522 Synthetic    Human Talent and Culture
+523 Synthetic                    Treasury
+524 Synthetic                    Treasury
+525 Synthetic                    Treasury
+526 Synthetic                    Treasury
+527 Synthetic                    Treasury
+528 Synthetic                    Treasury
+529 Synthetic                    Treasury
+530 Synthetic                    Treasury
+531 Synthetic                    Treasury
+532 Synthetic                         BIM
+533 Synthetic                         BIM
+534 Synthetic                         BIM
+535 Synthetic                         BIM
+536 Synthetic                         BIM
+537 Synthetic                         BIM
+538 Synthetic                         BIM
+539 Synthetic                         BIM
+540 Synthetic                         BIM
+541 Synthetic                       Legal
+542 Synthetic                       Legal
+543 Synthetic                       Legal
+544 Synthetic                       Legal
+545 Synthetic                       Legal
+546 Synthetic                       Legal
+547 Synthetic                       Legal
+548 Synthetic                       Legal
+549 Synthetic                       Legal
+550 Synthetic            Works Department
+551 Synthetic            Works Department
+552 Synthetic            Works Department
+553 Synthetic            Works Department
+554 Synthetic            Works Department
+555 Synthetic            Works Department
+556 Synthetic            Works Department
+557 Synthetic            Works Department
+558 Synthetic            Works Department
+559 Synthetic                       Taxes
+560 Synthetic                       Taxes
+561 Synthetic                       Taxes
+562 Synthetic                       Taxes
+563 Synthetic                       Taxes
+564 Synthetic                       Taxes
+565 Synthetic                       Taxes
+566 Synthetic                       Taxes
+567 Synthetic                       Taxes
+568 Synthetic                   Formaleta
+569 Synthetic                   Formaleta
+570 Synthetic                   Formaleta
+571 Synthetic                   Formaleta
+572 Synthetic                   Formaleta
+573 Synthetic                   Formaleta
+574 Synthetic                   Formaleta
+575 Synthetic                   Formaleta
+576 Synthetic                   Formaleta
+577 Synthetic                         RCI
+578 Synthetic                         RCI
+579 Synthetic                         RCI
+580 Synthetic                         RCI
+581 Synthetic                         RCI
+582 Synthetic                         RCI
+583 Synthetic                         RCI
+584 Synthetic                         RCI
+585 Synthetic                         RCI
+586 Synthetic        Construction Tenders
+587 Synthetic        Construction Tenders
+588 Synthetic        Construction Tenders
+589 Synthetic        Construction Tenders
+590 Synthetic        Construction Tenders
+591 Synthetic        Construction Tenders
+592 Synthetic        Construction Tenders
+593 Synthetic        Construction Tenders
+594 Synthetic        Construction Tenders
+595 Synthetic                       Works
+596 Synthetic                       Works
+597 Synthetic                       Works
+598 Synthetic                       Works
+599 Synthetic                       Works
+600 Synthetic                       Works
+601 Synthetic                       Works
+602 Synthetic                       Works
+603 Synthetic                       Works
+604 Synthetic                         PCH
+605 Synthetic                         PCH
+606 Synthetic                         PCH
+607 Synthetic                         PCH
+608 Synthetic                         PCH
+609 Synthetic                         PCH
+610 Synthetic                         PCH
+611 Synthetic                         PCH
+612 Synthetic                         PCH
+613 Synthetic                Electricians
+614 Synthetic                Electricians
+615 Synthetic                Electricians
+616 Synthetic                Electricians
+617 Synthetic                Electricians
+618 Synthetic                Electricians
+619 Synthetic                Electricians
+620 Synthetic                Electricians
+621 Synthetic                Electricians
+622 Synthetic                Tower Cranes
+623 Synthetic                Tower Cranes
+624 Synthetic                Tower Cranes
+625 Synthetic                Tower Cranes
+626 Synthetic                Tower Cranes
+627 Synthetic                Tower Cranes
+628 Synthetic                Tower Cranes
+629 Synthetic                Tower Cranes
+630 Synthetic                Tower Cranes
+631 Synthetic                   Marketing
+632 Synthetic                   Marketing
+633 Synthetic                   Marketing
+634 Synthetic                   Marketing
+635 Synthetic                   Marketing
+636 Synthetic                   Marketing
+637 Synthetic                   Marketing
+638 Synthetic                   Marketing
+639 Synthetic                   Marketing
+640 Synthetic         Digital Engineering
+641 Synthetic         Digital Engineering
+642 Synthetic         Digital Engineering
+643 Synthetic         Digital Engineering
+644 Synthetic         Digital Engineering
+645 Synthetic         Digital Engineering
+646 Synthetic         Digital Engineering
+647 Synthetic         Digital Engineering
+648 Synthetic         Digital Engineering
+649 Synthetic                 After-sales
+650 Synthetic                 After-sales
+651 Synthetic                 After-sales
+652 Synthetic                 After-sales
+653 Synthetic                 After-sales
+654 Synthetic                 After-sales
+655 Synthetic                 After-sales
+656 Synthetic                 After-sales
+657 Synthetic                 After-sales
+658 Synthetic    Procedures and Portfolio
+659 Synthetic    Procedures and Portfolio
+660 Synthetic    Procedures and Portfolio
+661 Synthetic    Procedures and Portfolio
+662 Synthetic    Procedures and Portfolio
+663 Synthetic    Procedures and Portfolio
+664 Synthetic    Procedures and Portfolio
+665 Synthetic    Procedures and Portfolio
+666 Synthetic    Procedures and Portfolio
+667 Synthetic                     Budgets
+668 Synthetic                     Budgets
+669 Synthetic                     Budgets
+670 Synthetic                     Budgets
+671 Synthetic                     Budgets
+672 Synthetic                     Budgets
+673 Synthetic                     Budgets
+674 Synthetic                     Budgets
+675 Synthetic                     Budgets
+676 Synthetic                         CRM
+677 Synthetic                         CRM
+678 Synthetic                         CRM
+679 Synthetic                         CRM
+680 Synthetic                         CRM
+681 Synthetic                         CRM
+682 Synthetic                         CRM
+683 Synthetic                         CRM
+684 Synthetic                         CRM
+685 Synthetic         Document Management
+686 Synthetic         Document Management
+687 Synthetic         Document Management
+688 Synthetic         Document Management
+689 Synthetic         Document Management
+690 Synthetic         Document Management
+691 Synthetic         Document Management
+692 Synthetic         Document Management
+693 Synthetic         Document Management
+694 Synthetic  Administrative Directorate
+695 Synthetic  Administrative Directorate
+696 Synthetic  Administrative Directorate
+697 Synthetic  Administrative Directorate
+698 Synthetic  Administrative Directorate
+699 Synthetic  Administrative Directorate
+700 Synthetic  Administrative Directorate
+701 Synthetic  Administrative Directorate
+702 Synthetic  Administrative Directorate
+                                                        Variable      Min
+1                                               Years of Service  1.00000
+2   CulturaAyC - We add value to clients (internal and external)  2.00000
+3                      CulturaAyC - We genuinely care for people  2.00000
+4                        CulturaAyC - We execute with discipline  3.00000
+5                  CulturaAyC - We promote high-performing teams  2.00000
+6                CulturaAyC - We innovate, we learn and we adapt  3.00000
+7                                                    PERFORMANCE 79.09091
+8                                                            AGE 32.00000
+9                                                    NPS company  5.00000
+10                                              Years of Service  3.00000
+11  CulturaAyC - We add value to clients (internal and external)  3.00000
+12                     CulturaAyC - We genuinely care for people  3.00000
+13                       CulturaAyC - We execute with discipline  2.00000
+14                 CulturaAyC - We promote high-performing teams  2.00000
+15               CulturaAyC - We innovate, we learn and we adapt  3.00000
+16                                                   PERFORMANCE 75.83333
+17                                                           AGE 37.00000
+18                                                   NPS company  6.00000
+19                                              Years of Service  1.00000
+20  CulturaAyC - We add value to clients (internal and external)  3.00000
+21                     CulturaAyC - We genuinely care for people  3.00000
+22                       CulturaAyC - We execute with discipline  3.00000
+23                 CulturaAyC - We promote high-performing teams  2.00000
+24               CulturaAyC - We innovate, we learn and we adapt  2.00000
+25                                                   PERFORMANCE 81.66667
+26                                                           AGE 26.00000
+27                                                   NPS company  8.00000
+28                                              Years of Service  1.00000
+29  CulturaAyC - We add value to clients (internal and external)  3.00000
+30                     CulturaAyC - We genuinely care for people  3.00000
+31                       CulturaAyC - We execute with discipline  2.00000
+32                 CulturaAyC - We promote high-performing teams  2.00000
+33               CulturaAyC - We innovate, we learn and we adapt  3.00000
+34                                                   PERFORMANCE 77.50000
+35                                                           AGE 24.00000
+36                                                   NPS company  8.00000
+37                                              Years of Service  1.00000
+38  CulturaAyC - We add value to clients (internal and external)  2.00000
+39                     CulturaAyC - We genuinely care for people  3.00000
+40                       CulturaAyC - We execute with discipline  3.00000
+41                 CulturaAyC - We promote high-performing teams  2.00000
+42               CulturaAyC - We innovate, we learn and we adapt  3.00000
+43                                                   PERFORMANCE 80.00000
+44                                                           AGE 35.00000
+45                                                   NPS company  8.00000
+46                                              Years of Service  0.00000
+47  CulturaAyC - We add value to clients (internal and external)  1.00000
+48                     CulturaAyC - We genuinely care for people  1.00000
+49                       CulturaAyC - We execute with discipline  1.00000
+50                 CulturaAyC - We promote high-performing teams  1.00000
+51               CulturaAyC - We innovate, we learn and we adapt  1.00000
+52                                                   PERFORMANCE 60.90909
+53                                                           AGE 24.00000
+54                                                   NPS company  5.00000
+55                                              Years of Service  1.00000
+56  CulturaAyC - We add value to clients (internal and external)  1.00000
+57                     CulturaAyC - We genuinely care for people  1.00000
+58                       CulturaAyC - We execute with discipline  1.00000
+59                 CulturaAyC - We promote high-performing teams  1.00000
+60               CulturaAyC - We innovate, we learn and we adapt  1.00000
+61                                                   PERFORMANCE 67.50000
+62                                                           AGE 25.00000
+63                                                   NPS company  7.00000
+64                                              Years of Service  6.00000
+65  CulturaAyC - We add value to clients (internal and external)      Inf
+66                     CulturaAyC - We genuinely care for people      Inf
+67                       CulturaAyC - We execute with discipline      Inf
+68                 CulturaAyC - We promote high-performing teams      Inf
+69               CulturaAyC - We innovate, we learn and we adapt      Inf
+70                                                   PERFORMANCE 95.00000
+71                                                           AGE 30.00000
+72                                                   NPS company  5.00000
+73                                              Years of Service  0.00000
+74  CulturaAyC - We add value to clients (internal and external)  1.00000
+75                     CulturaAyC - We genuinely care for people  1.00000
+76                       CulturaAyC - We execute with discipline  1.00000
+77                 CulturaAyC - We promote high-performing teams  1.00000
+78               CulturaAyC - We innovate, we learn and we adapt  1.00000
+79                                                   PERFORMANCE 68.33333
+80                                                           AGE 22.00000
+81                                                   NPS company  5.00000
+82                                              Years of Service  2.00000
+83  CulturaAyC - We add value to clients (internal and external)  3.00000
+84                     CulturaAyC - We genuinely care for people  3.00000
+85                       CulturaAyC - We execute with discipline  4.00000
+86                 CulturaAyC - We promote high-performing teams  3.00000
+87               CulturaAyC - We innovate, we learn and we adapt  4.00000
+88                                                   PERFORMANCE 90.83000
+89                                                           AGE 46.00000
+90                                                   NPS company  8.00000
+91                                              Years of Service  1.00000
+92  CulturaAyC - We add value to clients (internal and external)  3.00000
+93                     CulturaAyC - We genuinely care for people  3.00000
+94                       CulturaAyC - We execute with discipline  3.00000
+95                 CulturaAyC - We promote high-performing teams  3.00000
+96               CulturaAyC - We innovate, we learn and we adapt  2.00000
+97                                                   PERFORMANCE 71.81818
+98                                                           AGE 28.00000
+99                                                   NPS company  1.00000
+100                                             Years of Service  1.00000
+101 CulturaAyC - We add value to clients (internal and external)  3.00000
+102                    CulturaAyC - We genuinely care for people  3.00000
+103                      CulturaAyC - We execute with discipline  3.00000
+104                CulturaAyC - We promote high-performing teams  3.00000
+105              CulturaAyC - We innovate, we learn and we adapt  3.00000
+106                                                  PERFORMANCE 75.00000
+107                                                          AGE 26.00000
+108                                                  NPS company  7.00000
+109                                             Years of Service  0.00000
+110 CulturaAyC - We add value to clients (internal and external)  2.00000
+111                    CulturaAyC - We genuinely care for people  2.00000
+112                      CulturaAyC - We execute with discipline  3.00000
+113                CulturaAyC - We promote high-performing teams  3.00000
+114              CulturaAyC - We innovate, we learn and we adapt  2.00000
+115                                                  PERFORMANCE 82.50000
+116                                                          AGE 29.00000
+117                                                  NPS company  5.00000
+118                                             Years of Service  1.00000
+119 CulturaAyC - We add value to clients (internal and external)  3.00000
+120                    CulturaAyC - We genuinely care for people  3.00000
+121                      CulturaAyC - We execute with discipline  3.00000
+122                CulturaAyC - We promote high-performing teams  2.00000
+123              CulturaAyC - We innovate, we learn and we adapt  3.00000
+124                                                  PERFORMANCE 72.50000
+125                                                          AGE 25.00000
+126                                                  NPS company  8.00000
+127                                             Years of Service  3.00000
+128 CulturaAyC - We add value to clients (internal and external)  3.00000
+129                    CulturaAyC - We genuinely care for people  3.00000
+130                      CulturaAyC - We execute with discipline  2.00000
+131                CulturaAyC - We promote high-performing teams  3.00000
+132              CulturaAyC - We innovate, we learn and we adapt  3.00000
+133                                                  PERFORMANCE 59.16667
+134                                                          AGE 31.00000
+135                                                  NPS company  9.00000
+136                                             Years of Service  1.00000
+137 CulturaAyC - We add value to clients (internal and external)  2.00000
+138                    CulturaAyC - We genuinely care for people  2.00000
+139                      CulturaAyC - We execute with discipline  2.00000
+140                CulturaAyC - We promote high-performing teams  2.00000
+141              CulturaAyC - We innovate, we learn and we adapt  3.00000
+142                                                  PERFORMANCE 53.33333
+143                                                          AGE 21.00000
+144                                                  NPS company  8.00000
+145                                             Years of Service 15.00000
+146 CulturaAyC - We add value to clients (internal and external)  4.00000
+147                    CulturaAyC - We genuinely care for people  3.00000
+148                      CulturaAyC - We execute with discipline  4.00000
+149                CulturaAyC - We promote high-performing teams  4.00000
+150              CulturaAyC - We innovate, we learn and we adapt  3.00000
+151                                                  PERFORMANCE 96.66667
+152                                                          AGE 46.00000
+153                                                  NPS company  9.00000
+154                                             Years of Service  2.00000
+155 CulturaAyC - We add value to clients (internal and external)  3.00000
+156                    CulturaAyC - We genuinely care for people  1.00000
+157                      CulturaAyC - We execute with discipline  3.00000
+158                CulturaAyC - We promote high-performing teams  3.00000
+159              CulturaAyC - We innovate, we learn and we adapt  2.00000
+160                                                  PERFORMANCE 78.33333
+161                                                          AGE 29.00000
+162                                                  NPS company  8.00000
+163                                             Years of Service  0.00000
+164 CulturaAyC - We add value to clients (internal and external)  2.00000
+165                    CulturaAyC - We genuinely care for people  3.00000
+166                      CulturaAyC - We execute with discipline  3.00000
+167                CulturaAyC - We promote high-performing teams  3.00000
+168              CulturaAyC - We innovate, we learn and we adapt  3.00000
+169                                                  PERFORMANCE 80.00000
+170                                                          AGE 24.00000
+171                                                  NPS company  7.00000
+172                                             Years of Service  1.00000
+173 CulturaAyC - We add value to clients (internal and external)  3.00000
+174                    CulturaAyC - We genuinely care for people  2.00000
+175                      CulturaAyC - We execute with discipline  2.00000
+176                CulturaAyC - We promote high-performing teams  2.00000
+177              CulturaAyC - We innovate, we learn and we adapt  3.00000
+178                                                  PERFORMANCE 64.16667
+179                                                          AGE 21.00000
+180                                                  NPS company  5.00000
+181                                             Years of Service  1.00000
+182 CulturaAyC - We add value to clients (internal and external)  2.00000
+183                    CulturaAyC - We genuinely care for people  1.00000
+184                      CulturaAyC - We execute with discipline  1.00000
+185                CulturaAyC - We promote high-performing teams  1.00000
+186              CulturaAyC - We innovate, we learn and we adapt  1.00000
+187                                                  PERFORMANCE 53.63636
+188                                                          AGE 24.00000
+189                                                  NPS company  5.00000
+190                                             Years of Service  1.00000
+191 CulturaAyC - We add value to clients (internal and external)  3.00000
+192                    CulturaAyC - We genuinely care for people  3.00000
+193                      CulturaAyC - We execute with discipline  3.00000
+194                CulturaAyC - We promote high-performing teams  2.00000
+195              CulturaAyC - We innovate, we learn and we adapt  2.00000
+196                                                  PERFORMANCE 73.33333
+197                                                          AGE 31.00000
+198                                                  NPS company  9.00000
+199                                             Years of Service  1.00000
+200 CulturaAyC - We add value to clients (internal and external)  1.00000
+201                    CulturaAyC - We genuinely care for people  1.00000
+202                      CulturaAyC - We execute with discipline  1.00000
+203                CulturaAyC - We promote high-performing teams  1.00000
+204              CulturaAyC - We innovate, we learn and we adapt  1.00000
+205                                                  PERFORMANCE 68.33333
+206                                                          AGE 34.00000
+207                                                  NPS company  5.00000
+208                                             Years of Service  0.00000
+209 CulturaAyC - We add value to clients (internal and external)  3.00000
+210                    CulturaAyC - We genuinely care for people  3.00000
+211                      CulturaAyC - We execute with discipline  3.00000
+212                CulturaAyC - We promote high-performing teams  3.00000
+213              CulturaAyC - We innovate, we learn and we adapt  3.00000
+214                                                  PERFORMANCE 75.00000
+215                                                          AGE 29.00000
+216                                                  NPS company  5.00000
+217                                             Years of Service  1.00000
+218 CulturaAyC - We add value to clients (internal and external)  3.00000
+219                    CulturaAyC - We genuinely care for people  3.00000
+220                      CulturaAyC - We execute with discipline  3.00000
+221                CulturaAyC - We promote high-performing teams  3.00000
+222              CulturaAyC - We innovate, we learn and we adapt  3.00000
+223                                                  PERFORMANCE 78.18182
+224                                                          AGE 32.00000
+225                                                  NPS company  8.00000
+226                                             Years of Service  2.00000
+227 CulturaAyC - We add value to clients (internal and external)  2.00000
+228                    CulturaAyC - We genuinely care for people  3.00000
+229                      CulturaAyC - We execute with discipline  2.00000
+230                CulturaAyC - We promote high-performing teams  3.00000
+231              CulturaAyC - We innovate, we learn and we adapt  3.00000
+232                                                  PERFORMANCE 73.63636
+233                                                          AGE 29.00000
+234                                                  NPS company  9.00000
+235                                             Years of Service  0.00000
+236 CulturaAyC - We add value to clients (internal and external)  3.00000
+237                    CulturaAyC - We genuinely care for people  2.00000
+238                      CulturaAyC - We execute with discipline  3.00000
+239                CulturaAyC - We promote high-performing teams  3.00000
+240              CulturaAyC - We innovate, we learn and we adapt  3.00000
+241                                                  PERFORMANCE 75.83333
+242                                                          AGE 30.00000
+243                                                  NPS company  5.00000
+244                                             Years of Service  0.00000
+245 CulturaAyC - We add value to clients (internal and external)  1.00000
+246                    CulturaAyC - We genuinely care for people  1.00000
+247                      CulturaAyC - We execute with discipline  1.00000
+248                CulturaAyC - We promote high-performing teams  1.00000
+249              CulturaAyC - We innovate, we learn and we adapt  1.00000
+250                                                  PERFORMANCE  4.24000
+251                                                          AGE 22.00000
+252                                                  NPS company  5.00000
+253                                             Years of Service  1.00000
+254 CulturaAyC - We add value to clients (internal and external)  4.00000
+255                    CulturaAyC - We genuinely care for people  4.00000
+256                      CulturaAyC - We execute with discipline  4.00000
+257                CulturaAyC - We promote high-performing teams  4.00000
+258              CulturaAyC - We innovate, we learn and we adapt  4.00000
+259                                                  PERFORMANCE 87.50000
+260                                                          AGE 37.00000
+261                                                  NPS company 10.00000
+262                                             Years of Service  0.00000
+263 CulturaAyC - We add value to clients (internal and external)  3.00000
+264                    CulturaAyC - We genuinely care for people  3.00000
+265                      CulturaAyC - We execute with discipline  3.00000
+266                CulturaAyC - We promote high-performing teams  2.00000
+267              CulturaAyC - We innovate, we learn and we adapt  2.00000
+268                                                  PERFORMANCE 77.27273
+269                                                          AGE 24.00000
+270                                                  NPS company  5.00000
+271                                             Years of Service  9.00000
+272 CulturaAyC - We add value to clients (internal and external)  3.00000
+273                    CulturaAyC - We genuinely care for people  4.00000
+274                      CulturaAyC - We execute with discipline  3.00000
+275                CulturaAyC - We promote high-performing teams  3.00000
+276              CulturaAyC - We innovate, we learn and we adapt  4.00000
+277                                                  PERFORMANCE 93.33333
+278                                                          AGE 58.00000
+279                                                  NPS company 10.00000
+280                                             Years of Service  1.00000
+281 CulturaAyC - We add value to clients (internal and external)  3.00000
+282                    CulturaAyC - We genuinely care for people  2.00000
+283                      CulturaAyC - We execute with discipline  3.00000
+284                CulturaAyC - We promote high-performing teams  2.00000
+285              CulturaAyC - We innovate, we learn and we adapt  3.00000
+286                                                  PERFORMANCE 81.60000
+287                                                          AGE 21.00000
+288                                                  NPS company  6.00000
+289                                             Years of Service  2.00000
+290 CulturaAyC - We add value to clients (internal and external)  3.00000
+291                    CulturaAyC - We genuinely care for people  2.00000
+292                      CulturaAyC - We execute with discipline  4.00000
+293                CulturaAyC - We promote high-performing teams  3.00000
+294              CulturaAyC - We innovate, we learn and we adapt  3.00000
+295                                                  PERFORMANCE 80.90909
+296                                                          AGE 25.00000
+297                                                  NPS company  6.00000
+298                                             Years of Service  1.00000
+299 CulturaAyC - We add value to clients (internal and external)  3.00000
+300                    CulturaAyC - We genuinely care for people  3.00000
+301                      CulturaAyC - We execute with discipline  3.00000
+302                CulturaAyC - We promote high-performing teams  2.00000
+303              CulturaAyC - We innovate, we learn and we adapt  3.00000
+304                                                  PERFORMANCE 78.33333
+305                                                          AGE 25.00000
+306                                                  NPS company  8.00000
+307                                             Years of Service  1.00000
+308 CulturaAyC - We add value to clients (internal and external)  2.00000
+309                    CulturaAyC - We genuinely care for people  2.00000
+310                      CulturaAyC - We execute with discipline  2.00000
+311                CulturaAyC - We promote high-performing teams  2.00000
+312              CulturaAyC - We innovate, we learn and we adapt  3.00000
+313                                                  PERFORMANCE 60.00000
+314                                                          AGE 28.00000
+315                                                  NPS company  8.00000
+316                                             Years of Service  1.00000
+317 CulturaAyC - We add value to clients (internal and external)  2.00000
+318                    CulturaAyC - We genuinely care for people  3.00000
+319                      CulturaAyC - We execute with discipline  3.00000
+320                CulturaAyC - We promote high-performing teams  2.00000
+321              CulturaAyC - We innovate, we learn and we adapt  2.00000
+322                                                  PERFORMANCE 70.00000
+323                                                          AGE 24.00000
+324                                                  NPS company  8.00000
+325                                             Years of Service  1.00000
+326 CulturaAyC - We add value to clients (internal and external)  1.00000
+327                    CulturaAyC - We genuinely care for people  1.00000
+328                      CulturaAyC - We execute with discipline  1.00000
+329                CulturaAyC - We promote high-performing teams  1.00000
+330              CulturaAyC - We innovate, we learn and we adapt  1.00000
+331                                                  PERFORMANCE 96.00000
+332                                                          AGE 28.00000
+333                                                  NPS company  8.00000
+334                                             Years of Service  7.00000
+335 CulturaAyC - We add value to clients (internal and external)  4.00000
+336                    CulturaAyC - We genuinely care for people  3.00000
+337                      CulturaAyC - We execute with discipline  3.00000
+338                CulturaAyC - We promote high-performing teams  3.00000
+339              CulturaAyC - We innovate, we learn and we adapt  3.00000
+340                                                  PERFORMANCE 80.00000
+341                                                          AGE 35.00000
+342                                                  NPS company  9.00000
+343                                             Years of Service  0.00000
+344 CulturaAyC - We add value to clients (internal and external)  3.00000
+345                    CulturaAyC - We genuinely care for people  3.00000
+346                      CulturaAyC - We execute with discipline  4.00000
+347                CulturaAyC - We promote high-performing teams  4.00000
+348              CulturaAyC - We innovate, we learn and we adapt  4.00000
+349                                                  PERFORMANCE 85.83333
+350                                                          AGE 58.00000
+351                                                  NPS company 10.00000
+352                                             Years of Service      Inf
+353 CulturaAyC - We add value to clients (internal and external)      Inf
+354                    CulturaAyC - We genuinely care for people      Inf
+355                      CulturaAyC - We execute with discipline      Inf
+356                CulturaAyC - We promote high-performing teams      Inf
+357              CulturaAyC - We innovate, we learn and we adapt      Inf
+358                                                  PERFORMANCE      Inf
+359                                                          AGE      Inf
+360                                                  NPS company      Inf
+361                                             Years of Service      Inf
+362 CulturaAyC - We add value to clients (internal and external)      Inf
+363                    CulturaAyC - We genuinely care for people      Inf
+364                      CulturaAyC - We execute with discipline      Inf
+365                CulturaAyC - We promote high-performing teams      Inf
+366              CulturaAyC - We innovate, we learn and we adapt      Inf
+367                                                  PERFORMANCE      Inf
+368                                                          AGE      Inf
+369                                                  NPS company      Inf
+370                                             Years of Service      Inf
+371 CulturaAyC - We add value to clients (internal and external)      Inf
+372                    CulturaAyC - We genuinely care for people      Inf
+373                      CulturaAyC - We execute with discipline      Inf
+374                CulturaAyC - We promote high-performing teams      Inf
+375              CulturaAyC - We innovate, we learn and we adapt      Inf
+376                                                  PERFORMANCE      Inf
+377                                                          AGE      Inf
+378                                                  NPS company      Inf
+379                                             Years of Service      Inf
+380 CulturaAyC - We add value to clients (internal and external)      Inf
+381                    CulturaAyC - We genuinely care for people      Inf
+382                      CulturaAyC - We execute with discipline      Inf
+383                CulturaAyC - We promote high-performing teams      Inf
+384              CulturaAyC - We innovate, we learn and we adapt      Inf
+385                                                  PERFORMANCE      Inf
+386                                                          AGE      Inf
+387                                                  NPS company      Inf
+388                                             Years of Service      Inf
+389 CulturaAyC - We add value to clients (internal and external)      Inf
+390                    CulturaAyC - We genuinely care for people      Inf
+391                      CulturaAyC - We execute with discipline      Inf
+392                CulturaAyC - We promote high-performing teams      Inf
+393              CulturaAyC - We innovate, we learn and we adapt      Inf
+394                                                  PERFORMANCE      Inf
+395                                                          AGE      Inf
+396                                                  NPS company      Inf
+397                                             Years of Service  2.00000
+398 CulturaAyC - We add value to clients (internal and external)  3.00000
+399                    CulturaAyC - We genuinely care for people  2.00000
+400                      CulturaAyC - We execute with discipline  3.00000
+401                CulturaAyC - We promote high-performing teams  2.00000
+402              CulturaAyC - We innovate, we learn and we adapt  3.00000
+403                                                  PERFORMANCE 83.91973
+404                                                          AGE 42.00000
+405                                                  NPS company  8.00000
+406                                             Years of Service  6.00000
+407 CulturaAyC - We add value to clients (internal and external)  3.00000
+408                    CulturaAyC - We genuinely care for people  3.00000
+409                      CulturaAyC - We execute with discipline  3.00000
+410                CulturaAyC - We promote high-performing teams  3.00000
+411              CulturaAyC - We innovate, we learn and we adapt  4.00000
+412                                                  PERFORMANCE 82.53182
+413                                                          AGE 28.00000
+414                                                  NPS company  8.00000
+415                                             Years of Service      Inf
+416 CulturaAyC - We add value to clients (internal and external)      Inf
+417                    CulturaAyC - We genuinely care for people      Inf
+418                      CulturaAyC - We execute with discipline      Inf
+419                CulturaAyC - We promote high-performing teams      Inf
+420              CulturaAyC - We innovate, we learn and we adapt      Inf
+421                                                  PERFORMANCE      Inf
+422                                                          AGE      Inf
+423                                                  NPS company      Inf
+424                                             Years of Service  1.00000
+425 CulturaAyC - We add value to clients (internal and external)  1.00000
+426                    CulturaAyC - We genuinely care for people  1.00000
+427                      CulturaAyC - We execute with discipline  1.00000
+428                CulturaAyC - We promote high-performing teams  2.00000
+429              CulturaAyC - We innovate, we learn and we adapt  1.00000
+430                                                  PERFORMANCE 77.96224
+431                                                          AGE 33.00000
+432                                                  NPS company  5.00000
+433                                             Years of Service      Inf
+434 CulturaAyC - We add value to clients (internal and external)      Inf
+435                    CulturaAyC - We genuinely care for people      Inf
+436                      CulturaAyC - We execute with discipline      Inf
+437                CulturaAyC - We promote high-performing teams      Inf
+438              CulturaAyC - We innovate, we learn and we adapt      Inf
+439                                                  PERFORMANCE      Inf
+440                                                          AGE      Inf
+441                                                  NPS company      Inf
+442                                             Years of Service  2.00000
+443 CulturaAyC - We add value to clients (internal and external)  3.00000
+444                    CulturaAyC - We genuinely care for people  4.00000
+445                      CulturaAyC - We execute with discipline  4.00000
+446                CulturaAyC - We promote high-performing teams  4.00000
+447              CulturaAyC - We innovate, we learn and we adapt  3.00000
+448                                                  PERFORMANCE 65.31201
+449                                                          AGE 31.00000
+450                                                  NPS company  5.00000
+451                                             Years of Service      Inf
+452 CulturaAyC - We add value to clients (internal and external)      Inf
+453                    CulturaAyC - We genuinely care for people      Inf
+454                      CulturaAyC - We execute with discipline      Inf
+455                CulturaAyC - We promote high-performing teams      Inf
+456              CulturaAyC - We innovate, we learn and we adapt      Inf
+457                                                  PERFORMANCE      Inf
+458                                                          AGE      Inf
+459                                                  NPS company      Inf
+460                                             Years of Service  3.00000
+461 CulturaAyC - We add value to clients (internal and external)  4.00000
+462                    CulturaAyC - We genuinely care for people  4.00000
+463                      CulturaAyC - We execute with discipline  4.00000
+464                CulturaAyC - We promote high-performing teams  4.00000
+465              CulturaAyC - We innovate, we learn and we adapt  4.00000
+466                                                  PERFORMANCE 86.25734
+467                                                          AGE 59.00000
+468                                                  NPS company 10.00000
+469                                             Years of Service  6.00000
+470 CulturaAyC - We add value to clients (internal and external)  3.00000
+471                    CulturaAyC - We genuinely care for people  4.00000
+472                      CulturaAyC - We execute with discipline  4.00000
+473                CulturaAyC - We promote high-performing teams  3.00000
+474              CulturaAyC - We innovate, we learn and we adapt  3.00000
+475                                                  PERFORMANCE 90.84696
+476                                                          AGE 41.00000
+477                                                  NPS company  8.00000
+478                                             Years of Service  2.00000
+479 CulturaAyC - We add value to clients (internal and external)      Inf
+480                    CulturaAyC - We genuinely care for people      Inf
+481                      CulturaAyC - We execute with discipline      Inf
+482                CulturaAyC - We promote high-performing teams      Inf
+483              CulturaAyC - We innovate, we learn and we adapt      Inf
+484                                                  PERFORMANCE 75.32208
+485                                                          AGE 39.00000
+486                                                  NPS company  5.00000
+487                                             Years of Service      Inf
+488 CulturaAyC - We add value to clients (internal and external)      Inf
+489                    CulturaAyC - We genuinely care for people      Inf
+490                      CulturaAyC - We execute with discipline      Inf
+491                CulturaAyC - We promote high-performing teams      Inf
+492              CulturaAyC - We innovate, we learn and we adapt      Inf
+493                                                  PERFORMANCE      Inf
+494                                                          AGE      Inf
+495                                                  NPS company      Inf
+496                                             Years of Service      Inf
+497 CulturaAyC - We add value to clients (internal and external)      Inf
+498                    CulturaAyC - We genuinely care for people      Inf
+499                      CulturaAyC - We execute with discipline      Inf
+500                CulturaAyC - We promote high-performing teams      Inf
+501              CulturaAyC - We innovate, we learn and we adapt      Inf
+502                                                  PERFORMANCE      Inf
+503                                                          AGE      Inf
+504                                                  NPS company      Inf
+505                                             Years of Service      Inf
+506 CulturaAyC - We add value to clients (internal and external)      Inf
+507                    CulturaAyC - We genuinely care for people      Inf
+508                      CulturaAyC - We execute with discipline      Inf
+509                CulturaAyC - We promote high-performing teams      Inf
+510              CulturaAyC - We innovate, we learn and we adapt      Inf
+511                                                  PERFORMANCE      Inf
+512                                                          AGE      Inf
+513                                                  NPS company      Inf
+514                                             Years of Service      Inf
+515 CulturaAyC - We add value to clients (internal and external)      Inf
+516                    CulturaAyC - We genuinely care for people      Inf
+517                      CulturaAyC - We execute with discipline      Inf
+518                CulturaAyC - We promote high-performing teams      Inf
+519              CulturaAyC - We innovate, we learn and we adapt      Inf
+520                                                  PERFORMANCE      Inf
+521                                                          AGE      Inf
+522                                                  NPS company      Inf
+523                                             Years of Service      Inf
+524 CulturaAyC - We add value to clients (internal and external)      Inf
+525                    CulturaAyC - We genuinely care for people      Inf
+526                      CulturaAyC - We execute with discipline      Inf
+527                CulturaAyC - We promote high-performing teams      Inf
+528              CulturaAyC - We innovate, we learn and we adapt      Inf
+529                                                  PERFORMANCE      Inf
+530                                                          AGE      Inf
+531                                                  NPS company      Inf
+532                                             Years of Service      Inf
+533 CulturaAyC - We add value to clients (internal and external)      Inf
+534                    CulturaAyC - We genuinely care for people      Inf
+535                      CulturaAyC - We execute with discipline      Inf
+536                CulturaAyC - We promote high-performing teams      Inf
+537              CulturaAyC - We innovate, we learn and we adapt      Inf
+538                                                  PERFORMANCE      Inf
+539                                                          AGE      Inf
+540                                                  NPS company      Inf
+541                                             Years of Service      Inf
+542 CulturaAyC - We add value to clients (internal and external)      Inf
+543                    CulturaAyC - We genuinely care for people      Inf
+544                      CulturaAyC - We execute with discipline      Inf
+545                CulturaAyC - We promote high-performing teams      Inf
+546              CulturaAyC - We innovate, we learn and we adapt      Inf
+547                                                  PERFORMANCE      Inf
+548                                                          AGE      Inf
+549                                                  NPS company      Inf
+550                                             Years of Service      Inf
+551 CulturaAyC - We add value to clients (internal and external)      Inf
+552                    CulturaAyC - We genuinely care for people      Inf
+553                      CulturaAyC - We execute with discipline      Inf
+554                CulturaAyC - We promote high-performing teams      Inf
+555              CulturaAyC - We innovate, we learn and we adapt      Inf
+556                                                  PERFORMANCE      Inf
+557                                                          AGE      Inf
+558                                                  NPS company      Inf
+559                                             Years of Service      Inf
+560 CulturaAyC - We add value to clients (internal and external)      Inf
+561                    CulturaAyC - We genuinely care for people      Inf
+562                      CulturaAyC - We execute with discipline      Inf
+563                CulturaAyC - We promote high-performing teams      Inf
+564              CulturaAyC - We innovate, we learn and we adapt      Inf
+565                                                  PERFORMANCE      Inf
+566                                                          AGE      Inf
+567                                                  NPS company      Inf
+568                                             Years of Service      Inf
+569 CulturaAyC - We add value to clients (internal and external)      Inf
+570                    CulturaAyC - We genuinely care for people      Inf
+571                      CulturaAyC - We execute with discipline      Inf
+572                CulturaAyC - We promote high-performing teams      Inf
+573              CulturaAyC - We innovate, we learn and we adapt      Inf
+574                                                  PERFORMANCE      Inf
+575                                                          AGE      Inf
+576                                                  NPS company      Inf
+577                                             Years of Service      Inf
+578 CulturaAyC - We add value to clients (internal and external)      Inf
+579                    CulturaAyC - We genuinely care for people      Inf
+580                      CulturaAyC - We execute with discipline      Inf
+581                CulturaAyC - We promote high-performing teams      Inf
+582              CulturaAyC - We innovate, we learn and we adapt      Inf
+583                                                  PERFORMANCE      Inf
+584                                                          AGE      Inf
+585                                                  NPS company      Inf
+586                                             Years of Service      Inf
+587 CulturaAyC - We add value to clients (internal and external)      Inf
+588                    CulturaAyC - We genuinely care for people      Inf
+589                      CulturaAyC - We execute with discipline      Inf
+590                CulturaAyC - We promote high-performing teams      Inf
+591              CulturaAyC - We innovate, we learn and we adapt      Inf
+592                                                  PERFORMANCE      Inf
+593                                                          AGE      Inf
+594                                                  NPS company      Inf
+595                                             Years of Service      Inf
+596 CulturaAyC - We add value to clients (internal and external)      Inf
+597                    CulturaAyC - We genuinely care for people      Inf
+598                      CulturaAyC - We execute with discipline      Inf
+599                CulturaAyC - We promote high-performing teams      Inf
+600              CulturaAyC - We innovate, we learn and we adapt      Inf
+601                                                  PERFORMANCE      Inf
+602                                                          AGE      Inf
+603                                                  NPS company      Inf
+604                                             Years of Service      Inf
+605 CulturaAyC - We add value to clients (internal and external)      Inf
+606                    CulturaAyC - We genuinely care for people      Inf
+607                      CulturaAyC - We execute with discipline      Inf
+608                CulturaAyC - We promote high-performing teams      Inf
+609              CulturaAyC - We innovate, we learn and we adapt      Inf
+610                                                  PERFORMANCE      Inf
+611                                                          AGE      Inf
+612                                                  NPS company      Inf
+613                                             Years of Service      Inf
+614 CulturaAyC - We add value to clients (internal and external)      Inf
+615                    CulturaAyC - We genuinely care for people      Inf
+616                      CulturaAyC - We execute with discipline      Inf
+617                CulturaAyC - We promote high-performing teams      Inf
+618              CulturaAyC - We innovate, we learn and we adapt      Inf
+619                                                  PERFORMANCE      Inf
+620                                                          AGE      Inf
+621                                                  NPS company      Inf
+622                                             Years of Service      Inf
+623 CulturaAyC - We add value to clients (internal and external)      Inf
+624                    CulturaAyC - We genuinely care for people      Inf
+625                      CulturaAyC - We execute with discipline      Inf
+626                CulturaAyC - We promote high-performing teams      Inf
+627              CulturaAyC - We innovate, we learn and we adapt      Inf
+628                                                  PERFORMANCE      Inf
+629                                                          AGE      Inf
+630                                                  NPS company      Inf
+631                                             Years of Service      Inf
+632 CulturaAyC - We add value to clients (internal and external)      Inf
+633                    CulturaAyC - We genuinely care for people      Inf
+634                      CulturaAyC - We execute with discipline      Inf
+635                CulturaAyC - We promote high-performing teams      Inf
+636              CulturaAyC - We innovate, we learn and we adapt      Inf
+637                                                  PERFORMANCE      Inf
+638                                                          AGE      Inf
+639                                                  NPS company      Inf
+640                                             Years of Service      Inf
+641 CulturaAyC - We add value to clients (internal and external)      Inf
+642                    CulturaAyC - We genuinely care for people      Inf
+643                      CulturaAyC - We execute with discipline      Inf
+644                CulturaAyC - We promote high-performing teams      Inf
+645              CulturaAyC - We innovate, we learn and we adapt      Inf
+646                                                  PERFORMANCE      Inf
+647                                                          AGE      Inf
+648                                                  NPS company      Inf
+649                                             Years of Service      Inf
+650 CulturaAyC - We add value to clients (internal and external)      Inf
+651                    CulturaAyC - We genuinely care for people      Inf
+652                      CulturaAyC - We execute with discipline      Inf
+653                CulturaAyC - We promote high-performing teams      Inf
+654              CulturaAyC - We innovate, we learn and we adapt      Inf
+655                                                  PERFORMANCE      Inf
+656                                                          AGE      Inf
+657                                                  NPS company      Inf
+658                                             Years of Service      Inf
+659 CulturaAyC - We add value to clients (internal and external)      Inf
+660                    CulturaAyC - We genuinely care for people      Inf
+661                      CulturaAyC - We execute with discipline      Inf
+662                CulturaAyC - We promote high-performing teams      Inf
+663              CulturaAyC - We innovate, we learn and we adapt      Inf
+664                                                  PERFORMANCE      Inf
+665                                                          AGE      Inf
+666                                                  NPS company      Inf
+667                                             Years of Service      Inf
+668 CulturaAyC - We add value to clients (internal and external)      Inf
+669                    CulturaAyC - We genuinely care for people      Inf
+670                      CulturaAyC - We execute with discipline      Inf
+671                CulturaAyC - We promote high-performing teams      Inf
+672              CulturaAyC - We innovate, we learn and we adapt      Inf
+673                                                  PERFORMANCE      Inf
+674                                                          AGE      Inf
+675                                                  NPS company      Inf
+676                                             Years of Service      Inf
+677 CulturaAyC - We add value to clients (internal and external)      Inf
+678                    CulturaAyC - We genuinely care for people      Inf
+679                      CulturaAyC - We execute with discipline      Inf
+680                CulturaAyC - We promote high-performing teams      Inf
+681              CulturaAyC - We innovate, we learn and we adapt      Inf
+682                                                  PERFORMANCE      Inf
+683                                                          AGE      Inf
+684                                                  NPS company      Inf
+685                                             Years of Service      Inf
+686 CulturaAyC - We add value to clients (internal and external)      Inf
+687                    CulturaAyC - We genuinely care for people      Inf
+688                      CulturaAyC - We execute with discipline      Inf
+689                CulturaAyC - We promote high-performing teams      Inf
+690              CulturaAyC - We innovate, we learn and we adapt      Inf
+691                                                  PERFORMANCE      Inf
+692                                                          AGE      Inf
+693                                                  NPS company      Inf
+694                                             Years of Service      Inf
+695 CulturaAyC - We add value to clients (internal and external)      Inf
+696                    CulturaAyC - We genuinely care for people      Inf
+697                      CulturaAyC - We execute with discipline      Inf
+698                CulturaAyC - We promote high-performing teams      Inf
+699              CulturaAyC - We innovate, we learn and we adapt      Inf
+700                                                  PERFORMANCE      Inf
+701                                                          AGE      Inf
+702                                                  NPS company      Inf
+          Max   Median      Mean         SD
+1    22.00000  6.00000  7.100000  6.6907897
+2     4.00000  3.00000  3.222222  0.8333333
+3     4.00000  4.00000  3.444444  0.7264832
+4     4.00000  4.00000  3.555556  0.5270463
+5     4.00000  3.00000  3.222222  0.6666667
+6     4.00000  4.00000  3.666667  0.5000000
+7    98.18182 86.93182 88.151515  7.1414391
+8    62.00000 41.50000 44.200000  9.8747714
+9    10.00000 10.00000  9.200000  1.5491933
+10   22.00000 10.00000 11.250000  8.2613558
+11    4.00000  3.00000  3.250000  0.5000000
+12    4.00000  3.00000  3.250000  0.5000000
+13    4.00000  3.00000  3.000000  0.8164966
+14    4.00000  3.00000  3.000000  0.8164966
+15    4.00000  3.00000  3.250000  0.5000000
+16  100.00000 78.33333 83.125000 11.3320056
+17   57.00000 50.50000 48.750000  9.5350232
+18   10.00000  8.50000  8.250000  1.7078251
+19   12.00000  8.00000  7.000000  5.5677644
+20    4.00000  3.00000  3.333333  0.5773503
+21    4.00000  3.00000  3.333333  0.5773503
+22    4.00000  4.00000  3.666667  0.5773503
+23    3.00000  3.00000  2.666667  0.5773503
+24    4.00000  3.00000  3.000000  1.0000000
+25   99.16667 90.83333 90.555556  8.7533063
+26   47.00000 37.00000 36.666667 10.5039675
+27    9.00000  8.00000  8.333333  0.5773503
+28   25.00000 11.50000 12.178571  7.1908047
+29    4.00000  3.50000  3.500000  0.5091751
+30    4.00000  3.00000  3.464286  0.5078745
+31    4.00000  3.00000  3.392857  0.5669467
+32    4.00000  3.00000  3.321429  0.5479640
+33    4.00000  3.50000  3.500000  0.5091751
+34  100.00000 89.16667 89.329004  7.7756926
+35   61.00000 45.00000 45.642857 10.7985400
+36   10.00000 10.00000  9.678571  0.6118322
+37   22.00000  2.00000  7.111111  8.7812932
+38    4.00000  3.50000  3.375000  0.7440238
+39    4.00000  4.00000  3.625000  0.5175492
+40    4.00000  4.00000  3.750000  0.4629100
+41    4.00000  3.00000  3.250000  0.7071068
+42    4.00000  3.00000  3.375000  0.5175492
+43   99.09091 89.09091 87.718855  6.1167434
+44   63.00000 55.00000 52.777778  9.2706227
+45   10.00000 10.00000  9.375000  0.9161254
+46   19.00000  5.00000  4.317460  3.9136873
+47    4.00000  4.00000  3.435484  0.7382071
+48    4.00000  3.00000  3.338710  0.7880989
+49    4.00000  3.50000  3.387097  0.7322733
+50    4.00000  3.00000  3.274194  0.7718268
+51    4.00000  4.00000  3.435484  0.7813601
+52   99.09091 79.09091 79.955507  9.8366219
+53   57.00000 35.00000 36.412698  7.4110530
+54   10.00000 10.00000  9.483871  0.9363679
+55   24.00000  6.00000  7.241379  6.0630919
+56    4.00000  3.00000  3.241379  0.8724011
+57    4.00000  3.00000  3.172414  0.8048498
+58    4.00000  3.00000  3.241379  0.8724011
+59    4.00000  3.00000  3.068966  0.7987058
+60    4.00000  3.00000  3.137931  0.8334154
+61  100.00000 98.18182 90.824869 10.8842119
+62   62.00000 40.00000 40.413793 10.7221974
+63   10.00000 10.00000  9.310345  0.8495145
+64    6.00000  6.00000  6.000000         NA
+65       -Inf       NA       NaN         NA
+66       -Inf       NA       NaN         NA
+67       -Inf       NA       NaN         NA
+68       -Inf       NA       NaN         NA
+69       -Inf       NA       NaN         NA
+70   95.00000 95.00000 95.000000         NA
+71   30.00000 30.00000 30.000000         NA
+72    5.00000  5.00000  5.000000         NA
+73   27.00000  3.00000  4.391304  4.4695427
+74    4.00000  4.00000  3.488889  0.7268307
+75    4.00000  4.00000  3.422222  0.7534433
+76    4.00000  4.00000  3.511111  0.7268307
+77    4.00000  3.00000  3.333333  0.8257228
+78    4.00000  4.00000  3.511111  0.7268307
+79  100.00000 85.60000 86.809420  8.5292863
+80   58.00000 36.00000 36.434783  8.1148757
+81   10.00000 10.00000  9.717391  0.8605694
+82    2.00000  2.00000  2.000000         NA
+83    3.00000  3.00000  3.000000         NA
+84    3.00000  3.00000  3.000000         NA
+85    4.00000  4.00000  4.000000         NA
+86    3.00000  3.00000  3.000000         NA
+87    4.00000  4.00000  4.000000         NA
+88   90.83000 90.83000 90.830000         NA
+89   46.00000 46.00000 46.000000         NA
+90    8.00000  8.00000  8.000000         NA
+91   16.00000  6.50000  6.833333  5.6361926
+92    4.00000  4.00000  3.666667  0.5163978
+93    4.00000  3.00000  3.333333  0.5163978
+94    4.00000  4.00000  3.833333  0.4082483
+95    4.00000  3.50000  3.500000  0.5477226
+96    4.00000  4.00000  3.500000  0.8366600
+97   96.36364 83.18182 83.535354  8.2538450
+98   52.00000 38.00000 38.333333 10.8382040
+99   10.00000  8.00000  7.500000  3.3316662
+100  19.00000  5.00000  5.363636  5.2397085
+101   4.00000  4.00000  3.545455  0.5222330
+102   4.00000  3.00000  3.454545  0.5222330
+103   4.00000  4.00000  3.545455  0.5222330
+104   4.00000  4.00000  3.636364  0.5045250
+105   4.00000  4.00000  3.636364  0.5045250
+106  97.27273 88.33333 86.508264  7.3547657
+107  45.00000 31.00000 33.727273  7.4308937
+108  10.00000  9.00000  8.909091  1.0444659
+109  17.00000  4.00000  4.818182  4.8542390
+110   4.00000  3.00000  3.250000  0.7071068
+111   4.00000  3.00000  3.125000  0.6408699
+112   4.00000  3.00000  3.125000  0.3535534
+113   4.00000  3.00000  3.125000  0.3535534
+114   4.00000  3.00000  3.250000  0.7071068
+115  99.09091 98.18182 94.772727  5.6398450
+116  59.00000 38.00000 38.909091  7.7775902
+117  10.00000  9.00000  8.333333  1.5811388
+118  22.00000  6.50000  8.300000  6.5328231
+119   4.00000  4.00000  3.600000  0.5163978
+120   4.00000  3.00000  3.300000  0.4830459
+121   4.00000  4.00000  3.700000  0.4830459
+122   4.00000  3.00000  3.300000  0.6749486
+123   4.00000  4.00000  3.700000  0.4830459
+124  90.83333 85.90909 84.159091  6.8597173
+125  56.00000 37.50000 38.600000  9.0578388
+126  10.00000  9.50000  9.400000  0.6992059
+127  19.00000 10.00000 10.333333  4.7696960
+128   4.00000  3.00000  3.222222  0.4409586
+129   4.00000  3.00000  3.444444  0.5270463
+130   4.00000  3.00000  3.333333  0.7071068
+131   4.00000  3.00000  3.222222  0.4409586
+132   4.00000  4.00000  3.666667  0.5000000
+133  86.66667 65.83333 69.612795  8.1560379
+134  55.00000 44.00000 43.777778  8.0743077
+135  10.00000 10.00000  9.555556  0.5270463
+136  16.00000  5.00000  6.136364  4.5804497
+137   4.00000  3.00000  3.181818  0.5010811
+138   4.00000  3.00000  3.409091  0.5903261
+139   4.00000  3.00000  3.181818  0.6644986
+140   4.00000  3.00000  3.045455  0.6529984
+141   4.00000  3.50000  3.500000  0.5117663
+142  94.16667 67.08333 71.515152 11.2676562
+143  62.00000 34.50000 35.863636  9.9345259
+144  10.00000 10.00000  9.409091  0.7341397
+145  15.00000 15.00000 15.000000         NA
+146   4.00000  4.00000  4.000000         NA
+147   3.00000  3.00000  3.000000         NA
+148   4.00000  4.00000  4.000000         NA
+149   4.00000  4.00000  4.000000         NA
+150   3.00000  3.00000  3.000000         NA
+151  96.66667 96.66667 96.666667         NA
+152  46.00000 46.00000 46.000000         NA
+153   9.00000  9.00000  9.000000         NA
+154  14.00000  5.00000  5.666667  3.3911650
+155   4.00000  3.00000  3.222222  0.4409586
+156   4.00000  3.00000  3.111111  0.9279607
+157   4.00000  3.00000  3.222222  0.4409586
+158   4.00000  3.00000  3.111111  0.3333333
+159   4.00000  3.00000  3.333333  0.7071068
+160  94.16667 91.66667 89.259259  5.9722222
+161  51.00000 35.00000 36.555556  6.9841089
+162  10.00000  9.00000  9.333333  0.7071068
+163  13.00000  6.00000  5.352941  4.0302168
+164   4.00000  3.00000  3.352941  0.6063391
+165   4.00000  4.00000  3.647059  0.4925922
+166   4.00000  3.00000  3.411765  0.5072997
+167   4.00000  3.00000  3.411765  0.5072997
+168   4.00000  4.00000  3.588235  0.5072997
+169  93.33333 90.00000 88.921569  4.9015012
+170  60.00000 36.00000 35.294118  8.2064358
+171  10.00000 10.00000  9.529412  0.9432422
+172  22.00000  6.00000  7.437500  7.0518910
+173   4.00000  3.00000  3.312500  0.4787136
+174   4.00000  3.00000  3.187500  0.6551081
+175   4.00000  3.00000  3.187500  0.5439056
+176   4.00000  3.00000  3.062500  0.6800735
+177   4.00000  3.00000  3.437500  0.5123475
+178  89.16667 77.50000 77.343750  7.5658758
+179  52.00000 34.50000 35.062500  8.0039053
+180  10.00000  9.00000  8.812500  1.3275918
+181  23.00000  2.00000  3.157895  5.0361268
+182   4.00000  3.00000  3.411765  0.6183469
+183   4.00000  3.00000  3.058824  0.7475450
+184   4.00000  3.00000  3.235294  0.7524470
+185   4.00000  3.00000  3.176471  0.7276069
+186   4.00000  4.00000  3.411765  0.7952062
+187  98.18182 87.27273 85.011962 10.3104011
+188  52.00000 29.00000 29.473684  6.2304666
+189  10.00000  8.00000  8.111111  1.4095844
+190  12.00000  2.50000  3.833333  4.1673333
+191   4.00000  3.00000  3.200000  0.4472136
+192   4.00000  3.00000  3.200000  0.4472136
+193   3.00000  3.00000  3.000000  0.0000000
+194   4.00000  3.00000  3.000000  0.7071068
+195   4.00000  3.00000  3.000000  0.7071068
+196  99.16667 86.66667 87.222222 10.0092550
+197  69.00000 37.00000 41.666667 13.8948432
+198  10.00000 10.00000  9.600000  0.5477226
+199  13.00000  8.00000  7.848485  3.8820195
+200   4.00000  3.00000  3.406250  0.6652370
+201   4.00000  3.00000  3.343750  0.7006621
+202   4.00000  3.00000  3.281250  0.7718589
+203   4.00000  3.00000  3.187500  0.6444553
+204   4.00000  3.50000  3.375000  0.7513429
+205  97.50000 85.00000 85.353535  9.3030347
+206  62.00000 43.00000 42.909091  7.5347679
+207  10.00000  9.00000  9.181818  1.0444659
+208   7.00000  5.00000  4.000000  3.6055513
+209   4.00000  3.50000  3.500000  0.7071068
+210   4.00000  3.50000  3.500000  0.7071068
+211   4.00000  3.50000  3.500000  0.7071068
+212   4.00000  3.50000  3.500000  0.7071068
+213   4.00000  3.50000  3.500000  0.7071068
+214  99.16667 92.50000 88.888889 12.4814677
+215  67.00000 31.00000 42.333333 21.3853532
+216  10.00000  7.00000  7.333333  2.5166115
+217  10.00000  6.00000  5.666667  4.5092498
+218   4.00000  4.00000  3.666667  0.5773503
+219   4.00000  4.00000  3.666667  0.5773503
+220   4.00000  4.00000  3.666667  0.5773503
+221   4.00000  3.00000  3.333333  0.5773503
+222   4.00000  3.00000  3.333333  0.5773503
+223  81.66667 79.09091 79.646465  1.8076293
+224  52.00000 46.00000 43.333333 10.2632029
+225  10.00000 10.00000  9.333333  1.1547005
+226   5.00000  3.00000  3.333333  1.5275252
+227   4.00000  4.00000  3.333333  1.1547005
+228   4.00000  4.00000  3.666667  0.5773503
+229   4.00000  3.00000  3.000000  1.0000000
+230   4.00000  4.00000  3.666667  0.5773503
+231   4.00000  3.00000  3.333333  0.5773503
+232  94.54545 87.50000 85.227273 10.6382089
+233  39.00000 33.00000 33.666667  5.0332230
+234  10.00000 10.00000  9.666667  0.5773503
+235   6.00000  5.00000  3.833333  2.6394444
+236   4.00000  4.00000  3.800000  0.4472136
+237   4.00000  3.00000  3.200000  0.8366600
+238   4.00000  3.00000  3.400000  0.5477226
+239   4.00000  3.00000  3.200000  0.4472136
+240   4.00000  4.00000  3.600000  0.5477226
+241  97.27273 81.81818 84.431818  8.3726003
+242  57.00000 46.50000 44.666667 10.8382040
+243  10.00000  9.00000  8.333333  1.7511901
+244  18.00000  2.00000  2.881423  2.4756294
+245   4.00000  4.00000  3.572115  0.6174526
+246   4.00000  4.00000  3.552885  0.6348124
+247   4.00000  4.00000  3.634615  0.5824767
+248   4.00000  4.00000  3.490385  0.6738051
+249   4.00000  4.00000  3.697115  0.5380151
+250 100.00000 82.72727 82.292560 13.2475459
+251  64.00000 38.00000 39.806324 10.3738663
+252  10.00000 10.00000  8.906780  1.7503181
+253   1.00000  1.00000  1.000000  0.0000000
+254   4.00000  4.00000  4.000000  0.0000000
+255   4.00000  4.00000  4.000000  0.0000000
+256   4.00000  4.00000  4.000000  0.0000000
+257   4.00000  4.00000  4.000000  0.0000000
+258   4.00000  4.00000  4.000000  0.0000000
+259  92.72727 90.11364 90.113636  3.6962400
+260  37.00000 37.00000 37.000000  0.0000000
+261  10.00000 10.00000 10.000000  0.0000000
+262   9.00000  2.00000  2.666667  2.9154759
+263   4.00000  4.00000  3.625000  0.5175492
+264   4.00000  4.00000  3.625000  0.5175492
+265   4.00000  4.00000  3.625000  0.5175492
+266   4.00000  3.00000  2.875000  0.6408699
+267   4.00000  4.00000  3.500000  0.7559289
+268  99.09091 95.00000 90.319865  8.7373464
+269  50.00000 38.00000 38.888889  8.4179042
+270  10.00000 10.00000  8.666667  1.8708287
+271   9.00000  9.00000  9.000000         NA
+272   3.00000  3.00000  3.000000         NA
+273   4.00000  4.00000  4.000000         NA
+274   3.00000  3.00000  3.000000         NA
+275   3.00000  3.00000  3.000000         NA
+276   4.00000  4.00000  4.000000         NA
+277  93.33333 93.33333 93.333333         NA
+278  58.00000 58.00000 58.000000         NA
+279  10.00000 10.00000 10.000000         NA
+280   6.00000  2.00000  2.352941  1.6179144
+281   4.00000  4.00000  3.625000  0.5000000
+282   4.00000  3.00000  3.312500  0.6020797
+283   4.00000  3.00000  3.437500  0.5123475
+284   4.00000  3.00000  3.312500  0.6020797
+285   4.00000  3.50000  3.500000  0.5163978
+286  98.40000 92.50000 90.649020  6.0547630
+287  45.00000 32.00000 31.705882  7.2263814
+288  10.00000 10.00000  9.187500  1.2230427
+289   2.00000  2.00000  2.000000         NA
+290   3.00000  3.00000  3.000000         NA
+291   2.00000  2.00000  2.000000         NA
+292   4.00000  4.00000  4.000000         NA
+293   3.00000  3.00000  3.000000         NA
+294   3.00000  3.00000  3.000000         NA
+295  80.90909 80.90909 80.909091         NA
+296  25.00000 25.00000 25.000000         NA
+297   6.00000  6.00000  6.000000         NA
+298  18.00000  9.00000 10.100000  6.9354164
+299   4.00000  4.00000  3.600000  0.5163978
+300   4.00000  4.00000  3.600000  0.5163978
+301   4.00000  3.00000  3.300000  0.4830459
+302   4.00000  3.00000  3.300000  0.6749486
+303   4.00000  4.00000  3.700000  0.4830459
+304  95.00000 87.08333 86.454545  5.8450514
+305  56.00000 43.00000 42.600000 10.1893190
+306  10.00000 10.00000  9.400000  0.8432740
+307  14.00000  3.50000  5.227273  4.1049542
+308   4.00000  3.00000  3.200000  0.5231484
+309   4.00000  3.50000  3.450000  0.6048053
+310   4.00000  3.00000  3.300000  0.5712406
+311   4.00000  3.00000  3.150000  0.5871429
+312   4.00000  3.50000  3.500000  0.5129892
+313  81.66667 80.00000 77.159091  5.9963563
+314  58.00000 41.50000 42.818182  9.4548368
+315  10.00000 10.00000  9.600000  0.8207827
+316  11.00000  2.50000  3.428571  3.1061796
+317   4.00000  3.00000  3.384615  0.6504436
+318   4.00000  3.00000  3.384615  0.5063697
+319   4.00000  4.00000  3.538462  0.5188745
+320   4.00000  3.00000  3.307692  0.6304252
+321   4.00000  4.00000  3.461538  0.6602253
+322  99.16667 80.00000 80.719697  8.6968169
+323  50.00000 32.00000 33.928571  7.3218775
+324  10.00000  9.00000  8.923077  0.8623165
+325   6.00000  2.00000  3.000000  2.3452079
+326   4.00000  3.00000  2.800000  1.0954451
+327   4.00000  3.00000  2.800000  1.0954451
+328   3.00000  3.00000  2.600000  0.8944272
+329   3.00000  3.00000  2.600000  0.8944272
+330   4.00000  3.00000  2.600000  1.1401754
+331  98.40000 96.80000 96.960000  0.8763561
+332  37.00000 32.00000 31.800000  3.3466401
+333  10.00000 10.00000  9.400000  0.8944272
+334   9.00000  8.00000  8.000000  1.4142136
+335   4.00000  4.00000  4.000000  0.0000000
+336   4.00000  3.50000  3.500000  0.7071068
+337   3.00000  3.00000  3.000000  0.0000000
+338   3.00000  3.00000  3.000000  0.0000000
+339   4.00000  3.50000  3.500000  0.7071068
+340  82.50000 81.25000 81.250000  1.7677670
+341  39.00000 37.00000 37.000000  2.8284271
+342  10.00000  9.50000  9.500000  0.7071068
+343   0.00000  0.00000  0.000000         NA
+344   3.00000  3.00000  3.000000         NA
+345   3.00000  3.00000  3.000000         NA
+346   4.00000  4.00000  4.000000         NA
+347   4.00000  4.00000  4.000000         NA
+348   4.00000  4.00000  4.000000         NA
+349  85.83333 85.83333 85.833333         NA
+350  58.00000 58.00000 58.000000         NA
+351  10.00000 10.00000 10.000000         NA
+352      -Inf       NA       NaN         NA
+353      -Inf       NA       NaN         NA
+354      -Inf       NA       NaN         NA
+355      -Inf       NA       NaN         NA
+356      -Inf       NA       NaN         NA
+357      -Inf       NA       NaN         NA
+358      -Inf       NA       NaN         NA
+359      -Inf       NA       NaN         NA
+360      -Inf       NA       NaN         NA
+361      -Inf       NA       NaN         NA
+362      -Inf       NA       NaN         NA
+363      -Inf       NA       NaN         NA
+364      -Inf       NA       NaN         NA
+365      -Inf       NA       NaN         NA
+366      -Inf       NA       NaN         NA
+367      -Inf       NA       NaN         NA
+368      -Inf       NA       NaN         NA
+369      -Inf       NA       NaN         NA
+370      -Inf       NA       NaN         NA
+371      -Inf       NA       NaN         NA
+372      -Inf       NA       NaN         NA
+373      -Inf       NA       NaN         NA
+374      -Inf       NA       NaN         NA
+375      -Inf       NA       NaN         NA
+376      -Inf       NA       NaN         NA
+377      -Inf       NA       NaN         NA
+378      -Inf       NA       NaN         NA
+379      -Inf       NA       NaN         NA
+380      -Inf       NA       NaN         NA
+381      -Inf       NA       NaN         NA
+382      -Inf       NA       NaN         NA
+383      -Inf       NA       NaN         NA
+384      -Inf       NA       NaN         NA
+385      -Inf       NA       NaN         NA
+386      -Inf       NA       NaN         NA
+387      -Inf       NA       NaN         NA
+388      -Inf       NA       NaN         NA
+389      -Inf       NA       NaN         NA
+390      -Inf       NA       NaN         NA
+391      -Inf       NA       NaN         NA
+392      -Inf       NA       NaN         NA
+393      -Inf       NA       NaN         NA
+394      -Inf       NA       NaN         NA
+395      -Inf       NA       NaN         NA
+396      -Inf       NA       NaN         NA
+397   6.00000  3.00000  3.666667  2.0816660
+398   3.00000  3.00000  3.000000  0.0000000
+399   4.00000  3.00000  3.000000  1.0000000
+400   4.00000  3.00000  3.333333  0.5773503
+401   3.00000  3.00000  2.666667  0.5773503
+402   4.00000  3.00000  3.333333  0.5773503
+403  87.54117 85.87619 85.779032  1.8126749
+404  63.00000 43.00000 49.333333 11.8462371
+405  10.00000  8.00000  8.666667  1.1547005
+406   6.00000  6.00000  6.000000         NA
+407   3.00000  3.00000  3.000000         NA
+408   3.00000  3.00000  3.000000         NA
+409   3.00000  3.00000  3.000000         NA
+410   3.00000  3.00000  3.000000         NA
+411   4.00000  4.00000  4.000000         NA
+412  82.53182 82.53182 82.531817         NA
+413  28.00000 28.00000 28.000000         NA
+414   8.00000  8.00000  8.000000         NA
+415      -Inf       NA       NaN         NA
+416      -Inf       NA       NaN         NA
+417      -Inf       NA       NaN         NA
+418      -Inf       NA       NaN         NA
+419      -Inf       NA       NaN         NA
+420      -Inf       NA       NaN         NA
+421      -Inf       NA       NaN         NA
+422      -Inf       NA       NaN         NA
+423      -Inf       NA       NaN         NA
+424   2.00000  1.50000  1.500000  0.7071068
+425   1.00000  1.00000  1.000000         NA
+426   1.00000  1.00000  1.000000         NA
+427   1.00000  1.00000  1.000000         NA
+428   2.00000  2.00000  2.000000         NA
+429   1.00000  1.00000  1.000000         NA
+430  79.00223 78.48224 78.482238  0.7353856
+431  44.00000 38.50000 38.500000  7.7781746
+432  10.00000  7.50000  7.500000  3.5355339
+433      -Inf       NA       NaN         NA
+434      -Inf       NA       NaN         NA
+435      -Inf       NA       NaN         NA
+436      -Inf       NA       NaN         NA
+437      -Inf       NA       NaN         NA
+438      -Inf       NA       NaN         NA
+439      -Inf       NA       NaN         NA
+440      -Inf       NA       NaN         NA
+441      -Inf       NA       NaN         NA
+442   6.00000  3.00000  3.800000  1.6431677
+443   4.00000  4.00000  3.800000  0.4472136
+444   4.00000  4.00000  4.000000  0.0000000
+445   4.00000  4.00000  4.000000  0.0000000
+446   4.00000  4.00000  4.000000  0.0000000
+447   4.00000  4.00000  3.800000  0.4472136
+448  98.41473 91.79301 88.151924 13.0759925
+449  46.00000 43.00000 40.800000  5.8906706
+450  10.00000 10.00000  9.000000  2.2360680
+451      -Inf       NA       NaN         NA
+452      -Inf       NA       NaN         NA
+453      -Inf       NA       NaN         NA
+454      -Inf       NA       NaN         NA
+455      -Inf       NA       NaN         NA
+456      -Inf       NA       NaN         NA
+457      -Inf       NA       NaN         NA
+458      -Inf       NA       NaN         NA
+459      -Inf       NA       NaN         NA
+460   3.00000  3.00000  3.000000         NA
+461   4.00000  4.00000  4.000000         NA
+462   4.00000  4.00000  4.000000         NA
+463   4.00000  4.00000  4.000000         NA
+464   4.00000  4.00000  4.000000         NA
+465   4.00000  4.00000  4.000000         NA
+466  86.25734 86.25734 86.257340         NA
+467  59.00000 59.00000 59.000000         NA
+468  10.00000 10.00000 10.000000         NA
+469   6.00000  6.00000  6.000000         NA
+470   3.00000  3.00000  3.000000         NA
+471   4.00000  4.00000  4.000000         NA
+472   4.00000  4.00000  4.000000         NA
+473   3.00000  3.00000  3.000000         NA
+474   3.00000  3.00000  3.000000         NA
+475  90.84696 90.84696 90.846961         NA
+476  41.00000 41.00000 41.000000         NA
+477   8.00000  8.00000  8.000000         NA
+478   2.00000  2.00000  2.000000         NA
+479      -Inf       NA       NaN         NA
+480      -Inf       NA       NaN         NA
+481      -Inf       NA       NaN         NA
+482      -Inf       NA       NaN         NA
+483      -Inf       NA       NaN         NA
+484  75.32208 75.32208 75.322079         NA
+485  39.00000 39.00000 39.000000         NA
+486   5.00000  5.00000  5.000000         NA
+487      -Inf       NA       NaN         NA
+488      -Inf       NA       NaN         NA
+489      -Inf       NA       NaN         NA
+490      -Inf       NA       NaN         NA
+491      -Inf       NA       NaN         NA
+492      -Inf       NA       NaN         NA
+493      -Inf       NA       NaN         NA
+494      -Inf       NA       NaN         NA
+495      -Inf       NA       NaN         NA
+496      -Inf       NA       NaN         NA
+497      -Inf       NA       NaN         NA
+498      -Inf       NA       NaN         NA
+499      -Inf       NA       NaN         NA
+500      -Inf       NA       NaN         NA
+501      -Inf       NA       NaN         NA
+502      -Inf       NA       NaN         NA
+503      -Inf       NA       NaN         NA
+504      -Inf       NA       NaN         NA
+505      -Inf       NA       NaN         NA
+506      -Inf       NA       NaN         NA
+507      -Inf       NA       NaN         NA
+508      -Inf       NA       NaN         NA
+509      -Inf       NA       NaN         NA
+510      -Inf       NA       NaN         NA
+511      -Inf       NA       NaN         NA
+512      -Inf       NA       NaN         NA
+513      -Inf       NA       NaN         NA
+514      -Inf       NA       NaN         NA
+515      -Inf       NA       NaN         NA
+516      -Inf       NA       NaN         NA
+517      -Inf       NA       NaN         NA
+518      -Inf       NA       NaN         NA
+519      -Inf       NA       NaN         NA
+520      -Inf       NA       NaN         NA
+521      -Inf       NA       NaN         NA
+522      -Inf       NA       NaN         NA
+523      -Inf       NA       NaN         NA
+524      -Inf       NA       NaN         NA
+525      -Inf       NA       NaN         NA
+526      -Inf       NA       NaN         NA
+527      -Inf       NA       NaN         NA
+528      -Inf       NA       NaN         NA
+529      -Inf       NA       NaN         NA
+530      -Inf       NA       NaN         NA
+531      -Inf       NA       NaN         NA
+532      -Inf       NA       NaN         NA
+533      -Inf       NA       NaN         NA
+534      -Inf       NA       NaN         NA
+535      -Inf       NA       NaN         NA
+536      -Inf       NA       NaN         NA
+537      -Inf       NA       NaN         NA
+538      -Inf       NA       NaN         NA
+539      -Inf       NA       NaN         NA
+540      -Inf       NA       NaN         NA
+541      -Inf       NA       NaN         NA
+542      -Inf       NA       NaN         NA
+543      -Inf       NA       NaN         NA
+544      -Inf       NA       NaN         NA
+545      -Inf       NA       NaN         NA
+546      -Inf       NA       NaN         NA
+547      -Inf       NA       NaN         NA
+548      -Inf       NA       NaN         NA
+549      -Inf       NA       NaN         NA
+550      -Inf       NA       NaN         NA
+551      -Inf       NA       NaN         NA
+552      -Inf       NA       NaN         NA
+553      -Inf       NA       NaN         NA
+554      -Inf       NA       NaN         NA
+555      -Inf       NA       NaN         NA
+556      -Inf       NA       NaN         NA
+557      -Inf       NA       NaN         NA
+558      -Inf       NA       NaN         NA
+559      -Inf       NA       NaN         NA
+560      -Inf       NA       NaN         NA
+561      -Inf       NA       NaN         NA
+562      -Inf       NA       NaN         NA
+563      -Inf       NA       NaN         NA
+564      -Inf       NA       NaN         NA
+565      -Inf       NA       NaN         NA
+566      -Inf       NA       NaN         NA
+567      -Inf       NA       NaN         NA
+568      -Inf       NA       NaN         NA
+569      -Inf       NA       NaN         NA
+570      -Inf       NA       NaN         NA
+571      -Inf       NA       NaN         NA
+572      -Inf       NA       NaN         NA
+573      -Inf       NA       NaN         NA
+574      -Inf       NA       NaN         NA
+575      -Inf       NA       NaN         NA
+576      -Inf       NA       NaN         NA
+577      -Inf       NA       NaN         NA
+578      -Inf       NA       NaN         NA
+579      -Inf       NA       NaN         NA
+580      -Inf       NA       NaN         NA
+581      -Inf       NA       NaN         NA
+582      -Inf       NA       NaN         NA
+583      -Inf       NA       NaN         NA
+584      -Inf       NA       NaN         NA
+585      -Inf       NA       NaN         NA
+586      -Inf       NA       NaN         NA
+587      -Inf       NA       NaN         NA
+588      -Inf       NA       NaN         NA
+589      -Inf       NA       NaN         NA
+590      -Inf       NA       NaN         NA
+591      -Inf       NA       NaN         NA
+592      -Inf       NA       NaN         NA
+593      -Inf       NA       NaN         NA
+594      -Inf       NA       NaN         NA
+595      -Inf       NA       NaN         NA
+596      -Inf       NA       NaN         NA
+597      -Inf       NA       NaN         NA
+598      -Inf       NA       NaN         NA
+599      -Inf       NA       NaN         NA
+600      -Inf       NA       NaN         NA
+601      -Inf       NA       NaN         NA
+602      -Inf       NA       NaN         NA
+603      -Inf       NA       NaN         NA
+604      -Inf       NA       NaN         NA
+605      -Inf       NA       NaN         NA
+606      -Inf       NA       NaN         NA
+607      -Inf       NA       NaN         NA
+608      -Inf       NA       NaN         NA
+609      -Inf       NA       NaN         NA
+610      -Inf       NA       NaN         NA
+611      -Inf       NA       NaN         NA
+612      -Inf       NA       NaN         NA
+613      -Inf       NA       NaN         NA
+614      -Inf       NA       NaN         NA
+615      -Inf       NA       NaN         NA
+616      -Inf       NA       NaN         NA
+617      -Inf       NA       NaN         NA
+618      -Inf       NA       NaN         NA
+619      -Inf       NA       NaN         NA
+620      -Inf       NA       NaN         NA
+621      -Inf       NA       NaN         NA
+622      -Inf       NA       NaN         NA
+623      -Inf       NA       NaN         NA
+624      -Inf       NA       NaN         NA
+625      -Inf       NA       NaN         NA
+626      -Inf       NA       NaN         NA
+627      -Inf       NA       NaN         NA
+628      -Inf       NA       NaN         NA
+629      -Inf       NA       NaN         NA
+630      -Inf       NA       NaN         NA
+631      -Inf       NA       NaN         NA
+632      -Inf       NA       NaN         NA
+633      -Inf       NA       NaN         NA
+634      -Inf       NA       NaN         NA
+635      -Inf       NA       NaN         NA
+636      -Inf       NA       NaN         NA
+637      -Inf       NA       NaN         NA
+638      -Inf       NA       NaN         NA
+639      -Inf       NA       NaN         NA
+640      -Inf       NA       NaN         NA
+641      -Inf       NA       NaN         NA
+642      -Inf       NA       NaN         NA
+643      -Inf       NA       NaN         NA
+644      -Inf       NA       NaN         NA
+645      -Inf       NA       NaN         NA
+646      -Inf       NA       NaN         NA
+647      -Inf       NA       NaN         NA
+648      -Inf       NA       NaN         NA
+649      -Inf       NA       NaN         NA
+650      -Inf       NA       NaN         NA
+651      -Inf       NA       NaN         NA
+652      -Inf       NA       NaN         NA
+653      -Inf       NA       NaN         NA
+654      -Inf       NA       NaN         NA
+655      -Inf       NA       NaN         NA
+656      -Inf       NA       NaN         NA
+657      -Inf       NA       NaN         NA
+658      -Inf       NA       NaN         NA
+659      -Inf       NA       NaN         NA
+660      -Inf       NA       NaN         NA
+661      -Inf       NA       NaN         NA
+662      -Inf       NA       NaN         NA
+663      -Inf       NA       NaN         NA
+664      -Inf       NA       NaN         NA
+665      -Inf       NA       NaN         NA
+666      -Inf       NA       NaN         NA
+667      -Inf       NA       NaN         NA
+668      -Inf       NA       NaN         NA
+669      -Inf       NA       NaN         NA
+670      -Inf       NA       NaN         NA
+671      -Inf       NA       NaN         NA
+672      -Inf       NA       NaN         NA
+673      -Inf       NA       NaN         NA
+674      -Inf       NA       NaN         NA
+675      -Inf       NA       NaN         NA
+676      -Inf       NA       NaN         NA
+677      -Inf       NA       NaN         NA
+678      -Inf       NA       NaN         NA
+679      -Inf       NA       NaN         NA
+680      -Inf       NA       NaN         NA
+681      -Inf       NA       NaN         NA
+682      -Inf       NA       NaN         NA
+683      -Inf       NA       NaN         NA
+684      -Inf       NA       NaN         NA
+685      -Inf       NA       NaN         NA
+686      -Inf       NA       NaN         NA
+687      -Inf       NA       NaN         NA
+688      -Inf       NA       NaN         NA
+689      -Inf       NA       NaN         NA
+690      -Inf       NA       NaN         NA
+691      -Inf       NA       NaN         NA
+692      -Inf       NA       NaN         NA
+693      -Inf       NA       NaN         NA
+694      -Inf       NA       NaN         NA
+695      -Inf       NA       NaN         NA
+696      -Inf       NA       NaN         NA
+697      -Inf       NA       NaN         NA
+698      -Inf       NA       NaN         NA
+699      -Inf       NA       NaN         NA
+700      -Inf       NA       NaN         NA
+701      -Inf       NA       NaN         NA
+702      -Inf       NA       NaN         NA
+[1] DataType Variable Cohens_d
+<0 rows> (or 0-length row.names)
