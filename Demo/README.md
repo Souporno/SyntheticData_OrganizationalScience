@@ -1,142 +1,127 @@
-# Leveraging Synthetic Data to Advance Organizational Research
+# Demo — Generating Synthetic Data with SDV (CTGAN)
 
-Welcome to the GitHub repository for "Leveraging Synthetic Data to Advance Organizational Science." This repository is structured to facilitate an understanding and exploration of the research presented in our article.
+This folder contains the Jupyter notebook and outputs for generating synthetic tabular data from an organizational employee survey dataset using **CTGAN** via the **SDV (Synthetic Data Vault)** library.
 
-- **Study_one**: Analysis of the first part of our study, for GATB data.
-- **Study_two**: Analysis of the second part of our study, for CCL leadership data.
-- **Demo**: Code demo for generating synthetic data.
+**Paper:** Wang, P., Loignon, A.C., Shrestha, S., Banks, G.C., & Oswald, F.L. (2025). Advancing Organizational Science Through Synthetic Data. *Journal of Business and Psychology, 40*, 771–797.
 
-Regarding data sharing, as mentioned in our paper, synthetic data is a promising method in organizational research, but it still requires further development. Our paper serves as a case in point, illustrating that we cannot share the original datasets nor the synthetic datasets derived from them, as this would violate our existing data management policies. However, we are hopeful that synthetic data will be shared in the future as its acceptance in organizational research increases and technology advances. This is the central point of our paper.
+**Original repo:** https://github.com/wpengda/SyntheticData_OrganizationalScience
 
-Although we cannot share data, we will share all analysis code and demonstrations for generating synthetic data.
-
-For specific data inquiries, please contact the [National Center for O*NET Development](https://www.onetcenter.org/) regarding the GATB dataset, and the [Center for Creative Leadership](https://www.ccl.org/) regarding the CCL dataset.
-
-> **Privacy disclaimer:** The original dataset and the resulting synthetic dataset used in the Demo have not been included in this repository to protect individual privacy and comply with data management policies.
+**R-based validation results:** https://github.com/Souporno/SyntheticData_OrganizationalScience/tree/main/TestAyC
 
 ---
 
-## Demo: Step-by-Step Guide to Generating Synthetic Data with SDV
+## Files
 
-The following documents learnings and findings from running the demo with a real-world organizational dataset using the [SDV (Synthetic Data Vault)](https://github.com/sdv-dev/SDV) library.
+| File | Description |
+|---|---|
+| `DemoCTGAN.ipynb` | Jupyter notebook for synthetic data generation |
+| `conda.yml` | Conda environment with all dependencies |
+| `Boston.csv` | Original demo dataset from the paper |
 
-### Step 1 — Clone the Repository
+> **Note:** `synthetic_data.csv` is not included in this repo pending professor approval for public sharing of derived organizational data.
 
-Open your system Terminal:
+---
 
+## Setup
+
+### Step 1: Clone the Repository
 ```bash
 git clone https://github.com/wpengda/SyntheticData_OrganizationalScience.git
 cd SyntheticData_OrganizationalScience/Demo
 ```
 
-### Step 2 — Create and Activate the Conda Environment
-
+### Step 2: Create and Activate the Conda Environment
 The repo provides a `conda.yml` file with all dependencies pre-listed:
-
 ```bash
 conda env create -n vsynth -f conda.yml
 conda activate vsynth
 ```
-
 This installs SDV and all required packages into an isolated environment called `vsynth`.
 
-If Jupyter is not installed in the `vsynth` environment, install it manually:
-
+If Jupyter isn't installed in the vsynth environment, fix it with:
 ```bash
 pip install jupyter
 ```
-
-Then launch the notebook:
-
+Then run:
 ```bash
-jupyter notebook demo.ipynb
+jupyter notebook DemoCTGAN.ipynb
 ```
+This will open in your browser.
 
-> **Note:** If `conda` is not found in your terminal (common on macOS), initialize it first:
-> ```bash
-> source /opt/anaconda3/etc/profile.d/conda.sh
-> conda activate vsynth
-> ```
-
-If your dataset is an Excel file (`.xlsx`) rather than a CSV, also install `openpyxl`:
-
+If `openpyxl` is missing when reading Excel files:
 ```bash
+source /opt/anaconda3/etc/profile.d/conda.sh
+conda activate vsynth
 pip install openpyxl
 ```
 
----
-
-### Step 3 — PII (Personally Identifiable Information) Handling
-
-PII handling is critical. Columns containing personally identifiable information — such as full names, first names, and email addresses — must be explicitly flagged so SDV uses its anonymization engine (powered by [Faker](https://faker.readthedocs.io/)) to generate fake but realistic replacements instead of modeling the real values.
-
-```python
-metadata.update_column(table_name='employees', column_name='Yam', sdtype='name', pii=True)
-metadata.update_column(table_name='employees', column_name='First Name', sdtype='first_name', pii=True)
-metadata.update_column(table_name='employees', column_name='E-mail', sdtype='email', pii=True)
-```
-
-Without these flags, SDV may attempt to statistically model and reproduce actual names and emails, which defeats the purpose of anonymization.
-
-> **Note on the `Metadata` class:** As of SDV 1.34+, `SingleTableMetadata` is deprecated. Use the new `Metadata` class instead, calling `detect_from_dataframe` as a class method:
-> ```python
-> from sdv.metadata import Metadata
-> metadata = Metadata.detect_from_dataframe(data=original_data, table_name='employees')
-> ```
+### Step 3: Handle PII (Personally Identifiable Information)
+PII handling matters. Flag columns like `E-mail`, `First Name`, and employee ID fields as PII so SDV uses its anonymization engine (powered by Faker) rather than learning and reproducing real values.
 
 ---
 
-### Step 4 — Understanding Batch Size and Epochs
+## Key Concepts
 
-CTGAN (Conditional Tabular GAN) is a neural network — specifically a Generative Adversarial Network (GAN) designed for tabular data. The demo loops over combinations of two key training parameters:
+### What is SDV?
+**SDV (Synthetic Data Vault)** is an open-source Python library built specifically for generating synthetic tabular data. Originally created at MIT's Data to AI Lab in 2016 and now maintained by DataCebo, it supports multiple synthesizer models including CTGAN, GaussianCopula, and TVAE. It works with single tables, multiple connected tables, and sequential/time-series data.
+
+For organizational research specifically, SDV is valuable because it lets researchers share and analyze data that statistically behaves like real employee data without ever exposing actual individuals.
+
+### What is CTGAN?
+**CTGAN** (Conditional Tabular GAN) is a neural network — specifically a Generative Adversarial Network (GAN) — designed for tabular data. Two key training parameters:
 
 **Epochs** — how many times the model trains over your entire dataset. More epochs = more learning, but also more time and risk of overfitting.
-- 1,000 epochs = fast, rough
-- 5,000 epochs = slow, more refined
+- 1000 epochs = fast, rough
+- 5000 epochs = slow, more refined
 
-**Batch Size** — instead of feeding all data at once, the model trains on small chunks. Batch size controls how big those chunks are.
-- Smaller batches (200) = noisier updates, but sometimes generalizes better
-- Larger batches (500) = smoother updates, but requires more memory
+**Batch Size** — instead of feeding all your data at once, the model trains on small chunks. Batch size controls how big those chunks are.
+- Smaller batches (200) = noisier but sometimes generalizes better
+- Larger batches (500) = smoother but needs more memory
 
-**Why loop over combinations?** The code performs a basic hyperparameter search — trying all 12 combinations (3 batch sizes × 4 epoch counts) and keeping whichever produces synthetic data statistically closest to the original. It is a brute-force way to find the best settings for a specific dataset.
+The notebook runs a **hyperparameter search** across 12 combinations (3 batch sizes × 4 epoch counts) and keeps whichever produces synthetic data closest to the original statistically. This is a brute-force approach to find the best settings for the specific dataset.
 
-> **Performance note:** This will take a very long time on a Mac without a GPU — 12 models × up to 5,000 epochs each. For a quick test, reduce the search space first:
-> ```python
-> batch_sizes = [500]
-> epochs_list = [300]
-> ```
+> ⚠️ This will take a long time on a Mac without a GPU — 12 models × up to 5000 epochs each.
 
-**Best model from our run:** `batch_size=500, epochs=3000` with a mean absolute error score of **5.74** (lower is better). Interestingly, more epochs did not always help — 3,000 epochs beat 5,000 for batch size 500, which is normal with GANs. They can overfit or destabilize with too much training.
+### Column Encoding Principle
+For best results with CTGAN, encode column types correctly before training:
+- **Ordinal columns** (Likert scales, job levels) → encode as integers so CTGAN learns the ordering
+- **Nominal columns** (Gender, Area, City) → leave as categorical, no natural order exists
+
+Forcing a fake numeric order onto nominal data actively hurts quality.
 
 ---
 
-### Step 5 — Evaluating Synthetic Data Quality
+## Data Preparation Note
 
-#### Diagnostic (Structure & Validity)
+The original dataset (Arquitectura y Concreto) had translation issues. The 5 Likert-scale culture questions were originally in Spanish and mistranslated inconsistently. The correct encoding is:
 
+| Spanish | English | Encoded Value |
+|---|---|---|
+| Totalmente de acuerdo | Totally agree | 4 |
+| De acuerdo | Agree | 3 |
+| En desacuerdo | Disagree | 2 |
+| Totalmente en desacuerdo | Totally disagree | 1 |
+
+This is a clean 4-point scale with no neutral midpoint. Encoding these as ordinal numerics (1–4) before training improved the SDV overall quality score from 80.31% to 81.36%.
+
+The `Communication - It works` column contains free-text open-ended responses and was excluded from numeric analysis — CTGAN treats it as unordered categorical and assigns values by frequency sampling rather than learning any semantic structure.
+
+---
+
+## Results
+
+### Hyperparameter Search
+The best model was **batch_size=500, epochs=3000** with a MAE score of **3.31** (lowest = best). Interestingly, more epochs didn't always help — 3000 beat 5000 for batch size 500, which is normal with GANs. They can overfit or destabilize with too much training.
+
+To check where the model was saved:
 ```python
-from sdv.evaluation.single_table import run_diagnostic
-diagnostic = run_diagnostic(real_data=original_data, synthetic_data=synthetic_data, metadata=metadata)
+import os
+print(os.getcwd())
 ```
 
-Our run achieved **100% on both Data Validity and Data Structure** — confirming the synthetic data is well-formed and structurally identical to the original.
+### SDV Quality Report
 
-#### Quality Report (Statistical Similarity)
-
-```python
-from sdv.evaluation.single_table import evaluate_quality
-quality_report = evaluate_quality(real_data=original_data, synthetic_data=synthetic_data, metadata=metadata)
-```
-
-Our run results:
-
-| Metric | Score |
-|---|---|
-| Column Shapes | 86.97% |
-| Column Pair Trends | 73.64% |
-| **Overall** | **80.31%** |
-
-**General benchmarks from the SDV literature:**
+**Overall Score: 81.36%** — solid quality for a GAN-based synthetic dataset, especially on a Mac without a GPU.
 
 | Score | Interpretation |
 |---|---|
@@ -145,26 +130,39 @@ Our run results:
 | 0.70 – 0.80 | Acceptable / borderline |
 | Below 0.70 | Poor |
 
-An overall score of **80.31%** is solid quality for a GAN-based synthetic dataset, especially when running on a Mac without a GPU.
+Notable column scores:
+- **Communication - It works: 0.55** — lowest score, expected given free-text content
+- **PERFORMANCE: 0.84** — sits comfortably in the acceptable range
+- **CulturaAyC columns: 0.87–0.96** — strong performance after Likert encoding
 
-**Notable finding — Communication column (0.53):** This column scored lowest, likely because it contains long free-text responses with many NaN values, which CTGAN struggles to model well.
+CTGAN needs to learn the full shape of continuous distributions (mean, spread, skewness, tails), which is harder than categorical columns. GANs sometimes get stuck generating only the most common values and ignoring the tails. For a methodology demo this is fine; for substantive PERFORMANCE-specific research, flag it as a limitation.
+
+### Privacy Check
+Zero overlapping rows between original and synthetic data (overlap ratio = 0). The synthetic dataset contains no exact copies of real records.
+
+### Distribution Check (PERFORMANCE vs Years of Service)
+
+Both real and synthetic data are heavily concentrated in the **PERFORMANCE 75–100 range**, meaning most employees at this company perform highly. The synthetic data learned this correctly.
+
+**What it got right:**
+- Overall performance range and concentration correctly learned
+- Weak positive tenure-performance trend preserved in both datasets
+- Data spread at 0–10 years looks visually similar
+
+**What it got wrong:**
+- Synthetic data generated low-performance outliers (cyan dots around PERFORMANCE 60–75 with Years of Service 20+) that don't match real patterns
+- The bottom cluster (Years of Service = 0–2) is over-represented — too many synthetic points compressed at the very bottom, suggesting CTGAN over-learned the frequency of newer employees
+- The tails and low-frequency regions aren't perfectly learned
+
+**What improved after Likert encoding:** Compared to the pre-encoding run, the synthetic data now covers the full PERFORMANCE range more faithfully (0–100), including rare low-performance cases that the previous model underrepresented. The upper range (PERFORMANCE 80–100, Years of Service 5–25) shows much tighter overlap between real and synthetic points.
+
+**Insight:** The real data suggests no clear relationship between tenure and performance. Long-serving employees don't consistently outperform newer ones. The synthetic data roughly preserves this, which is good. We'd flag the low-performance outlier generation and over-clustering at Years of Service = 0 as limitations for PERFORMANCE-specific or tenure-specific research.
 
 ---
 
-### Step 6 — Why Numerical Columns Are Harder
+## Alternative: GaussianCopula
 
-Numerical columns like PERFORMANCE can take any value across a continuous range (e.g., 87.5, 99.17, 80.83). CTGAN needs to learn the full shape of the distribution — mean, spread, skewness, and tails — which is significantly harder than learning category proportions.
-
-Specific challenges:
-- **Mode collapse** — GANs can get "stuck" generating only common values and ignoring rare but real scores (very high or very low performance)
-- **Multimodal distributions** — multiple peaks are difficult to learn
-- **Decimal precision** — values like 99.167 are harder to replicate than whole numbers
-
-Our PERFORMANCE column scored **0.77**, placing it in the acceptable-but-borderline range. For a methodology demo this is fine. For substantive People Analytics research on PERFORMANCE specifically, this should be flagged as a limitation, and validation on real data is recommended — consistent with the pre-registration framework proposed in this paper.
-
-**Learning — consider GaussianCopula for numerical columns:**
-
-GaussianCopula models each numerical column's distribution explicitly using statistical methods rather than neural networks, and often outperforms CTGAN on smaller datasets with continuous numerical columns:
+For better numerical column fidelity (especially PERFORMANCE), consider swapping CTGAN for **GaussianCopula**, which models each numerical column's distribution explicitly using statistical methods rather than a neural network:
 
 ```python
 from sdv.single_table import GaussianCopulaSynthesizer
@@ -174,43 +172,10 @@ synthesizer.fit(original_data)
 synthetic_data = synthesizer.sample(len(original_data))
 ```
 
-The tradeoff is that GaussianCopula is weaker at capturing complex relationships *between* columns. For individual column fidelity, however, it is likely the better choice for datasets with important continuous numerical variables like PERFORMANCE.
+GaussianCopula is weaker at capturing complex relationships between columns but often outperforms CTGAN on individual column fidelity for smaller datasets with continuous numerical columns.
 
 ---
 
-### Step 7 — Privacy Verification
+## Appendix: Why Ordinal Encoding Matters for CTGAN
 
-```python
-overlapping_data = pd.merge(original_data, synthetic_data, how='inner')
-print(overlapping_data)
-```
-
-**Result: Empty DataFrame** — zero overlapping rows between the original and synthetic datasets. No real individual's data was reproduced exactly. This demonstrates the core value of synthetic data for organizational research: analytical utility without privacy risk, directly supporting the methodology proposed in this paper.
-
----
-
-### Step 8 — Visualizing Column Pair Distributions
-
-```python
-from sdv.evaluation.single_table import get_column_pair_plot
-
-fig = get_column_pair_plot(
-    real_data=original_data,
-    synthetic_data=synthetic_data,
-    metadata=metadata,
-    column_names=['PERFORMANCE', 'Years of Service'],
-)
-fig.show()
-```
-
-> **Note:** `get_column_pair_plot` accepts exactly two column names. To compare multiple pairs, call it separately for each.
-
-**Interpretation of PERFORMANCE vs. Years of Service:**
-
-Both real and synthetic data are heavily concentrated in the PERFORMANCE 75–100 range, meaning most employees perform highly. The synthetic data learned this pattern correctly.
-
-Areas where synthetic data fell short:
-- Low-performance outliers (PERFORMANCE 25–50) were generated in the synthetic data without corresponding real counterparts
-- Employees with very short tenure (Years of Service = 0–1) were over-represented in the synthetic output
-
-**People Analytics insight:** The real data suggests no clear relationship between tenure and performance — long-serving employees do not consistently outperform newer ones. The synthetic data roughly preserves this finding, which is encouraging for methodology validation purposes.
+When CTGAN receives text labels like `"Totally agree"`, it treats them as unordered categories and one-hot encodes them internally. It has no idea that `"Totally agree" > "Agree" > "Disagree"` — the ordinal relationship is completely lost. By encoding as 4, 3, 2, 1 before training, CTGAN learns that 4 is close to 3 and far from 1, allowing it to generate realistic intermediate patterns rather than just mimicking category frequencies.
