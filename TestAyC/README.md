@@ -75,10 +75,10 @@ Descriptive statistics (min, max, median, mean, SD) are computed for each variab
 |---|---|---|
 | Years of Service | 0.208 | Acceptable |
 | CulturaAyC - Add value | 0.309 | Moderate |
-| CulturaAyC - Care for people | 0.157 | Negligible ✅ |
-| CulturaAyC - Execute with discipline | 0.171 | Negligible ✅ |
+| CulturaAyC - Care for people | 0.157 | Negligible  |
+| CulturaAyC - Execute with discipline | 0.171 | Negligible  |
 | CulturaAyC - Promote teams | 0.244 | Moderate |
-| CulturaAyC - Innovate | 0.195 | Negligible ✅ |
+| CulturaAyC - Innovate | 0.195 | Negligible  |
 | PERFORMANCE | 0.239 | Moderate |
 | AGE | 0.204 | Acceptable |
 | NPS company | 0.218 | Acceptable |
